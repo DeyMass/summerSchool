@@ -7,3 +7,6 @@ test:
 	gcc ./les4/testing.c -lm -o test.out
 	./test.out
 	rm test.out
+
+clear:
+	rm -f *.o
