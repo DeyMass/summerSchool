@@ -10,6 +10,7 @@ script:
     - make test
 
 deploy:
+    provider: script
     script: make
     skip_cleanup: true
     on:
