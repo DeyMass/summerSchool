@@ -10,8 +10,8 @@ script:
     - make test
 
 deploy:
-    provider: script
-    script: make
+    provider: releases
+    file: res.out
     skip_cleanup: true
     on:
-        tags: false
+        tags: true
