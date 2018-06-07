@@ -11,7 +11,7 @@ script:
 
 deploy:
     provider: releases
-    file: res.out
+    file: ./les3/bin/res.out
     skip_cleanup: true
     on:
         tags: true
