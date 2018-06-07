@@ -4,7 +4,8 @@
 int main()
 {
     int *ptr  = NULL;
-    for (int i = 0; i < 10; i++){
+    int i;
+    for (i = 0; i < 10; i++){
         ptr = (int*)malloc(sizeof(int) * 100);
         ptr[15] = 123;
     }
