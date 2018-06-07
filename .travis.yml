@@ -12,7 +12,7 @@ deploy:
     provider: releases
     api_key:
         secure: $GIT_TOKEN
-    file: ./les3/bin/res.out
+    file: test.out
     skip_cleanup: true
     on:
         tags: true
