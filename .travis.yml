@@ -8,3 +8,4 @@ branches:
         - master
 script:
     - make
+    - make test
