@@ -13,7 +13,7 @@ deploy:
     api_key:
         secure: $GIT_TOKEN
     file:
-        - test.
+        - test.out
         - ./les3/bin/res.out
 
     skip_cleanup: true
