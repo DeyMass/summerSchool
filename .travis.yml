@@ -3,11 +3,14 @@ os:
     - linux
 language: c
 compiler: gcc
+
 script:
     - make test
 
 deploy:
     provider: releases
+    api_key:
+	secure: $GIT_TOKEN
     file: ./les3/bin/res.out
     skip_cleanup: true
     on:
