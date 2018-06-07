@@ -7,5 +7,10 @@ branches:
     only:
         - master
 script:
-    - make
     - make test
+
+deploy:
+    script: make
+    skip_cleanup: true
+    on:
+        tags: true
