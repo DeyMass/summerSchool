@@ -10,7 +10,7 @@ script:
 deploy:
     provider: releases
     api_key:
-	secure: $GIT_TOKEN
+        secure: $GIT_TOKEN
     file: ./les3/bin/res.out
     skip_cleanup: true
     on:
