@@ -2,5 +2,5 @@
 
 float op_log(int base, float val)
 {
-    return log(val) / log(base);
+    return (float)((float)log(base) / (float)log(val));
 }
