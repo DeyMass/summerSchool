@@ -23,8 +23,8 @@ struct ALIGNMENT_ATTRIB UNALIGNED_STRUCT{
 int main()
 {
     char str[10] = {'A', 0, 0, 0, 0, 'B', 0, 0, 0, 0};
-    struct ALIGNED_STRUCT *pointer = (ALIGNED_S_POINTER) str;
-    struct UNALIGNED_STRUCT *sec_pointer = (UNALIGNED_S_POINTER) str;
+    ALIGNED_S_POINTER pointer = (ALIGNED_S_POINTER) str;
+    UNALIGNED_S_POINTER sec_pointer = (UNALIGNED_S_POINTER) str;
     printf("Aligned struct: %c %i (sizeof = %lu)", pointer->symbol, pointer->number, sizeof(struct ALIGNED_STRUCT));
     printf("\n");
     printf("Unaligned struct: %c %i (sizeof = %lu)", sec_pointer->symbol, sec_pointer->number, sizeof(struct UNALIGNED_STRUCT));

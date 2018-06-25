@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 extern float sum(float a, float b);
 extern float sub(float a, float b);
@@ -11,27 +12,34 @@ int main()
 {
     float operandA, operandB, result;
     char operation;
-    printf("Enter expression\n");
-	scanf("%f%c%f", &operandA, &operation, &operandB);
+    printf("Select operation:\n"
+           "1) Add"
+           "2) Sub"
+           "3) Multiply\n"
+           "4) Divide\n");
+    scanf("%f%c%f", &operandA, &operation, &operandB);
     switch(operation){
-		case '+':
+        case '+':
             result = sum(operandA, operandB);
             break;
-		case '-':
+        case '-':
             result = sub(operandA, operandB);
             break;
-		case '/':
+        case '/':
             result = divide(operandA, operandB);
             break;
-		case '*':
+        case '*':
             result = mul(operandA, operandB);
             break;
-		case 'l':
+        case 'l':
             result = op_log(operandA, operandB);
 		    break;
-		default:
+        case 'p':
+            result = pow(4, 7);
+            break;
+        default:
             printf("Unknown operation");
-	}
+    }
     printf("\nresult = %f\n", result);
-	return 0;
+    return 0;
 }

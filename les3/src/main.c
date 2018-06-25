@@ -17,3 +17,13 @@ int main()
     }
     printf("\nAverage: %f\n", sum / (float)Nelements);
 }
+
+/* docker pull
+ * docker images
+ * docker ps -a
+ * docker pull -a ubuntu
+ * docker rmi ubuntu: trusty
+ * docker rm <hash>
+ * docker -it ubuntu
+ *
+ */
