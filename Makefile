@@ -5,6 +5,7 @@ main:
 	make -C ./les4
 	make -C ./les7
 	make -C ./les8
+	make -C ./les9
 test:
 	gcc ./les4/testing.c -lm -o test.out
 	./test.out
