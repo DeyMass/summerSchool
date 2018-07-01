@@ -21,6 +21,7 @@ WINDOW *rightWindowBorder;
 int maxHeight;
 int maxWidth;
 
+//Draw 2 windows
 void showInterface(){
     int margin = maxWidth / 2;
     leftWindowBorder = newwin(maxHeight, margin, 0, 0);
@@ -30,9 +31,9 @@ void showInterface(){
     refresh();
     wrefresh(rightWindowBorder);
     wrefresh(leftWindowBorder);
-
 }
 
+//comparator to sort directories first
 int goodSort(const struct dirent **a, const struct dirent **b){
     if ((*a)->d_type == DT_DIR && (*b)->d_type == DT_DIR){
         return strcmp((*a)->d_name, (*b)->d_name);
@@ -42,11 +43,18 @@ int goodSort(const struct dirent **a, const struct dirent **b){
     return 0;
 }
 
+//function to redraw entries list in window
 void redraw(WINDOW **win, struct dirent **dir, int size, int selected){
     wclear(*win);
+    start_color();
+    wbkgd(*win, COLOR_BLACK);
+    init_pair(1, COLOR_GREEN, COLOR_BLACK);
+    init_pair(2, COLOR_RED, COLOR_BLACK);
     for (int i = 0; i < size && i < selected; i++) {
+        if(dir[i]->d_type == DT_DIR) wattron(*win, COLOR_PAIR(1));
         waddstr(*win, dir[i]->d_name);
         waddch(*win, '\n');
+        wattroff(*win, COLOR_PAIR(1));
     }
     if (selected < size) {
         wattron(*win, A_STANDOUT);
@@ -54,20 +62,27 @@ void redraw(WINDOW **win, struct dirent **dir, int size, int selected){
         waddch(*win, '\n');
         wattroff(*win, A_STANDOUT);
         for (int i = selected + 1; i < size; i++) {
+            if(dir[i]->d_type == DT_DIR) wattron(*win, COLOR_PAIR(1));
             waddstr(*win, dir[i]->d_name);
             waddch(*win, '\n');
+            wattroff(*win, COLOR_PAIR(1));
         }
-    }
 
+    }
     refresh();
     wrefresh(*win);
 }
 
-void toggle(bool *var){
-    *var = !(*var);
+//release memory because 'scandir'...
+void memFree(struct dirent ***var, int size){
+    int i;
+    for(i = 0; i < size; i++)
+        free((*var)[i]);
+    free(*var);
 }
 
 int main(){
+    //Get window size
     struct winsize size;
     ioctl(0, TIOCGWINSZ, &size);
     char path[999] = ".";
@@ -80,54 +95,84 @@ int main(){
     WINDOW *leftData = newwin(maxHeight - 2, margin - 2, 1, 1);
     WINDOW *rightData = newwin(maxHeight - 2, margin - 2, 1, margin + 1);
     struct dirent **leftDir, **rightDir;
-    int rDirSize = scandir(path, &rightDir, NULL, goodSort);
-    int lDirSize = scandir(path, &leftDir, NULL, goodSort);
-    refresh();
-    wrefresh(rightData);
-    wrefresh(leftData);
+    char leftDirPath[250];
+    char rightDirPath[250];
+    int  selectedPosition = 0;
+    int  isInterrupted = 0;
+    //calculate number of entries in current directory
+    int  rDirSize = scandir(path, &rightDir, NULL, goodSort);
+    int  lDirSize = scandir(path, &leftDir, NULL, goodSort);
 
-    int selectedPosition = 0;
-    int isInterrupted = 0;
     bool currentWindowType = LEFT_WINDOW;
-    nodelay(leftData, true);
-    keypad(leftData, true);
-    keypad(stdscr, true);
-    keypad(rightData, true);
+    nodelay(leftData, true);//Enabled handling
+    keypad(leftData, true); //for arrow
+    keypad(stdscr, true);   //keys in
+    keypad(rightData, true);//all windows
     curs_set(false);
     cbreak();
+
+
+    realpath(leftDir[selectedPosition]->d_name, leftDirPath);
+    realpath(rightDir[selectedPosition]->d_name, rightDirPath);
+    redraw(&rightData, rightDir, rDirSize, rDirSize);
+    redraw(&leftData, leftDir, lDirSize, selectedPosition);
+
     while(!isInterrupted){
         noecho();
         sync();
-        wprintw(rightData, "cur win = %i", currentWindowType);
         if (currentWindowType == LEFT_WINDOW) {
             redraw(&leftData, leftDir, lDirSize, selectedPosition);
         }
         else{
-            curscr = rightData;
             redraw(&rightData, rightDir, rDirSize, selectedPosition);
         }
+
         int sym = getch();
         switch (sym) {
             case '\n':
-                return -1;
+                if (currentWindowType == LEFT_WINDOW) {
+                    realpath(leftDir[selectedPosition]->d_name, leftDirPath);
+                    chdir(leftDirPath);
+                    memFree(&leftDir, lDirSize);
+                    lDirSize = scandir(path, &leftDir, NULL, goodSort);
+                }
+                else{
+                    realpath(rightDir[selectedPosition]->d_name, rightDirPath);
+                    chdir(rightDirPath);
+                    memFree(&rightDir, rDirSize);
+                    rDirSize = scandir(path, &rightDir, NULL, goodSort);
+                }
+                selectedPosition = 0;
+                break;
             case '\t':
                 selectedPosition = 0;
+                //When switch from LEFT window to RIGHT window
                 if (currentWindowType == LEFT_WINDOW) {
                     currentWindowType = RIGHT_WINDOW;
+                    chdir(rightDirPath);
+                    //remove highlight from string
                     redraw(&leftData, leftDir, lDirSize, lDirSize);
                 }
+                //When switch from RIGHT window to LEFT window
                 else {
                     currentWindowType = LEFT_WINDOW;
+                    chdir(leftDirPath);
+                    //remove highlight from string
                     redraw(&rightData, rightDir, rDirSize, rDirSize);
                 }
                 break;
-            case 's':
-                if (selectedPosition == lDirSize - 1){
+            case KEY_DOWN:
+                //Check highlighted string in left window
+                if (currentWindowType == LEFT_WINDOW && selectedPosition == lDirSize - 1){
+                    break;
+                }
+                //Check highlighted string in right window
+                else if(currentWindowType == RIGHT_WINDOW && selectedPosition == rDirSize - 1){
                     break;
                 }
                 selectedPosition++;
                 break;
-            case 'w':
+            case KEY_UP:
                 if (selectedPosition == 0){
                     break;
                 }
@@ -138,7 +183,13 @@ int main(){
                 break;
         }
     }
-
+    memFree(&rightDir, rDirSize);
+    memFree(&leftDir, lDirSize);
+    delwin(rightData);
+    delwin(leftData);
+    delwin(rightWindowBorder);
+    delwin(leftWindowBorder);
+    delwin(stdscr);
 
     getch();
     endwin();
