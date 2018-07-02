@@ -8,3 +8,5 @@
 *.so
 ./cmake*
 *cmake*
+*.swp
+CMake*
