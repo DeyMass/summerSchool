@@ -4,6 +4,7 @@
 
 #include <sys/ioctl.h>
 #include <sys/stat.h>
+#include "sys/types.h"
 #include <fcntl.h>
 #include <termio.h>
 #include <ncurses.h>
@@ -43,6 +44,21 @@ int goodSort(const struct dirent **a, const struct dirent **b){
     return 0;
 }
 
+void removeWindow(){
+    endwin();
+}
+
+pid_t runProgram(char* progPath){
+    pid_t sideProc = fork();
+    switch (sideProc){
+        case 0:
+            execl(progPath, progPath, NULL);
+            break;
+        default:
+            return sideProc;
+    }
+}
+
 //function to redraw entries list in window
 void redraw(WINDOW **win, struct dirent **dir, int size, int selected){
     wclear(*win);
@@ -71,6 +87,17 @@ void redraw(WINDOW **win, struct dirent **dir, int size, int selected){
     }
     refresh();
     wrefresh(*win);
+}
+
+bool selectedDir(int currentWindow, struct dirent** rDir, struct dirent** lDir, int selectedPos){
+    switch (currentWindow){
+        case LEFT_WINDOW:
+            if (lDir[selectedPos]->d_type != DT_DIR) return false;
+            break;
+        case RIGHT_WINDOW:
+            if(rDir[selectedPos]->d_type != DT_DIR) return false;
+    }
+    return true;
 }
 
 //release memory because 'scandir'...
@@ -102,6 +129,7 @@ int main(){
     //calculate number of entries in current directory
     int  rDirSize = scandir(path, &rightDir, NULL, goodSort);
     int  lDirSize = scandir(path, &leftDir, NULL, goodSort);
+    pid_t subroutine_pid;
 
     bool currentWindowType = LEFT_WINDOW;
     nodelay(leftData, true);//Enabled handling
@@ -130,6 +158,18 @@ int main(){
         int sym = getch();
         switch (sym) {
             case '\n':
+                if (selectedDir(currentWindowType, rightDir, leftDir, selectedPosition) == false){
+                    if (currentWindowType == LEFT_WINDOW)
+                        realpath(leftDir[selectedPosition]->d_name, path);
+                    else
+                        realpath(rightDir[selectedPosition]->d_name, path);
+                    removeWindow();
+                    subroutine_pid = runProgram(path);
+                    wait(subroutine_pid);
+                    path[0] = '.';
+                    path[1] = 0;
+                    break;
+                }
                 if (currentWindowType == LEFT_WINDOW) {
                     realpath(leftDir[selectedPosition]->d_name, leftDirPath);
                     chdir(leftDirPath);
