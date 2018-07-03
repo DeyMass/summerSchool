@@ -4,6 +4,8 @@
 
 #include "stdlib.h"
 #include "stdio.h"
+#include "unistd.h"
+#include "sys/wait.h"
 
 int main()
 {
@@ -45,10 +47,11 @@ int main()
                     break;
             }
     }
-    wait(child1);
-    wait(child2);
-    wait(child3);
-    wait(child4);
-    wait(child5);
+    int status;
+    wait(&status);
+    wait(&status);
+    wait(&status);
+    wait(&status);
+    wait(&status);
     return 0;
 }
