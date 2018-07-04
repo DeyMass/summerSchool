@@ -13,6 +13,7 @@
 #include <string.h>
 #include <unistd.h>
 #include "dirent.h"
+#include <sys/wait.h>
 
 #define LEFT_WINDOW  0
 #define RIGHT_WINDOW 1
@@ -139,7 +140,7 @@ int main(){
     curs_set(false);
     cbreak();
 
-
+    int child_status;
     realpath(leftDir[selectedPosition]->d_name, leftDirPath);
     realpath(rightDir[selectedPosition]->d_name, rightDirPath);
     redraw(&rightData, rightDir, rDirSize, rDirSize);
@@ -165,7 +166,7 @@ int main(){
                         realpath(rightDir[selectedPosition]->d_name, path);
                     removeWindow();
                     subroutine_pid = runProgram(path);
-                    wait(subroutine_pid);
+                    wait(&child_status);
                     path[0] = '.';
                     path[1] = 0;
                     break;
