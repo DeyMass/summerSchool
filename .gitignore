@@ -10,3 +10,6 @@
 *cmake*
 *.swp
 CMake*
+*tar*
+*rpm*
+*deb*
