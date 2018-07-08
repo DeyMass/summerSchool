@@ -5,7 +5,7 @@
 #ifndef PROJECT_DEFINITIONS_H
 #define PROJECT_DEFINITIONS_H
 
-#define COPY_BLOCK_SIZE 32
+#define COPY_BLOCK_SIZE 4096
 #define PROG_HEIGHT     7
 #define PROG_WIDTH      50
 #define LEFT_WINDOW     0

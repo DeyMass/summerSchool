@@ -15,12 +15,7 @@
 #include "dirent.h"
 #include <sys/wait.h>
 #include <pthread.h>
-
-#define COPY_BLOCK_SIZE 32
-#define PROG_HEIGHT     7
-#define PROG_WIDTH      50
-#define LEFT_WINDOW     0
-#define RIGHT_WINDOW    1
+#include "../include/definitions.h"
 
 WINDOW *leftWindowBorder;
 WINDOW *rightWindowBorder;
@@ -29,11 +24,12 @@ int maxHeight;
 int maxWidth;
 off_t progressMax = 0;
 off_t progressNow = 0;
+int isExit = 0;
 int oldPercentage = 0;
 pthread_cond_t  start_progress_cond;
 pthread_mutex_t mutex;
 
-//Draw 2 windows
+//Draw 2 box windows
 void showInterface()
 {
     int margin = maxWidth / 2;
@@ -48,10 +44,11 @@ void showInterface()
     wrefresh(leftWindowBorder);
 }
 
-void progressUpdate(void){
-    int isExit = 0;
-    while(!isExit) {
+void progressUpdate(void)
+{
+    while(1) {
         pthread_cond_wait(&start_progress_cond, &mutex);
+        if (isExit) break;
         float percentage = 0;
         float fakePercentage = 0;
         int diff = 0;
@@ -63,7 +60,7 @@ void progressUpdate(void){
         wmove(progressBarWindow, 3, PROG_WIDTH - 2);
         waddch(progressBarWindow, ']');
         wmove(progressBarWindow, 3, 2);
-        while (percentage < (PROG_WIDTH - 4)) {
+        while (progressNow < progressMax) {
             percentage = ((float) progressNow / (float) progressMax) * (PROG_WIDTH - 4);
             fakePercentage = ((float) progressNow / (float) progressMax) * 100;
             wmove(percent, 0, 0);
@@ -126,6 +123,7 @@ void drawProgressWindow(char* which, char* where)
     wmove(progressBarWindow, 2, 1);
     wrefresh(progressBarWindow);
     copy(which, where);
+    while(progressMax > 0);
     showInterface();
 }
 
@@ -178,7 +176,7 @@ void redraw(WINDOW **win, struct dirent **dir, int size, int selected)
             stat(path, &fileInfo);
             waddstr(*win, dir[i]->d_name);
             if (fileInfo.st_size == 0)
-                printf("mark");
+                printf("mark %s [%i]\n",dir[i]->d_name, i);
             wprintw(*win, " <%i>", fileInfo.st_size);
         }
         waddch(*win, '\n');
@@ -217,7 +215,7 @@ void redraw(WINDOW **win, struct dirent **dir, int size, int selected)
     wrefresh(*win);
 }
 
-bool selectedDir(int currentWindow, struct dirent** rDir, struct dirent** lDir, int selectedPos)
+bool isDirSelected(int currentWindow, struct dirent **rDir, struct dirent **lDir, int selectedPos)
 {
     switch (currentWindow){
         case LEFT_WINDOW:
@@ -229,7 +227,7 @@ bool selectedDir(int currentWindow, struct dirent** rDir, struct dirent** lDir, 
     return true;
 }
 
-//release memory because 'scandir'...
+//release memory allocated in 'scandir'
 void memFree(struct dirent ***var, int size)
 {
     int i;
@@ -246,11 +244,13 @@ int main(){
     pthread_create(&updater_pid, NULL, (void*) progressUpdate, NULL);
 
     //Get window size
-    struct winsize size;
-    ioctl(0, TIOCGWINSZ, &size);
-    char path[999] = ".";
-    maxWidth = size.ws_col;
-    maxHeight = size.ws_row - 1;
+    struct winsize *size = malloc(sizeof(struct winsize));
+    ioctl(0, TIOCGWINSZ, size);
+    //sometimes size is undefined, because something is wrong.
+    //can't do anything
+    maxWidth = size->ws_col;
+    maxHeight = size->ws_row - 1;
+    free(size);
     int margin = maxWidth / 2;
 
     initscr();
@@ -263,6 +263,7 @@ int main(){
     int  selectedPosition = 0;
     int  isInterrupted = 0;
     //calculate number of entries in current directory
+    char path[999] = ".";
     int  rDirSize = scandir(path, &rightDir, NULL, goodSort);
     int  lDirSize = scandir(path, &leftDir, NULL, goodSort);
     pid_t subroutine_pid;
@@ -270,7 +271,7 @@ int main(){
     bool currentWindowType = LEFT_WINDOW;
     nodelay(leftDataWindow, true);//Enabled handling
     keypad(leftDataWindow, true); //for arrow
-    keypad(stdscr, true);   //keys in
+    keypad(stdscr, true);         //keys in
     keypad(rightDataWindow, true);//all windows
     curs_set(false);
     cbreak();
@@ -280,11 +281,6 @@ int main(){
     realpath(rightDir[selectedPosition]->d_name, rightDirPath);
     redraw(&rightDataWindow, rightDir, rDirSize, rDirSize);
     redraw(&leftDataWindow, leftDir, lDirSize, selectedPosition);
-    WINDOW* win = newwin(10, 5, maxWidth / 2 - 25, (maxHeight / 2) - 25);
-    box(win, 0, 0);
-    refresh();
-    wrefresh(win);
-
 
     while(!isInterrupted){
         noecho();
@@ -299,7 +295,7 @@ int main(){
         int sym = getch();
         switch (sym) {
             case '\n': {
-                if (selectedDir(currentWindowType, rightDir, leftDir, selectedPosition) == false) {
+                if (isDirSelected(currentWindowType, rightDir, leftDir, selectedPosition) == false) {
                     if (currentWindowType == LEFT_WINDOW)
                         realpath(leftDir[selectedPosition]->d_name, path);
                     else
@@ -331,7 +327,7 @@ int main(){
                 if (currentWindowType == LEFT_WINDOW) {
                     currentWindowType = RIGHT_WINDOW;
                     memFree(&leftDir, lDirSize);
-                    scandir(leftDirPath, &leftDir, NULL, goodSort);
+                    lDirSize = scandir(leftDirPath, &leftDir, NULL, goodSort);
                     //remove highlight from string
                     redraw(&leftDataWindow, leftDir, lDirSize, lDirSize);
                     chdir(rightDirPath);
@@ -340,7 +336,7 @@ int main(){
                 else {
                     currentWindowType = LEFT_WINDOW;
                     memFree(&rightDir, rDirSize);
-                    scandir(rightDirPath, &rightDir, NULL, goodSort);
+                    rDirSize = scandir(rightDirPath, &rightDir, NULL, goodSort);
                     //remove highlight from string
                     redraw(&rightDataWindow, rightDir, rDirSize, rDirSize);
                     chdir(leftDirPath);
@@ -380,18 +376,21 @@ int main(){
                     chdir(rightDirPath);
                     memFree(&leftDir, lDirSize);
                     lDirSize = scandir(leftDirPath, &leftDir, NULL, goodSort);
-                    redraw(&rightDataWindow, rightDir, rDirSize, selectedPosition);
                     redraw(&leftDataWindow, leftDir, lDirSize, lDirSize);
+                    redraw(&rightDataWindow, rightDir, rDirSize, selectedPosition);
                 }
 
                 break;
             }
             case CTRL('X'): {
                 isInterrupted = 1;
+                isExit = 1;
+                pthread_cond_broadcast(&start_progress_cond);
                 break;
             }
         }
     }
+    pthread_join(updater_pid, NULL);
     memFree(&rightDir, rDirSize);
     memFree(&leftDir, lDirSize);
     delwin(rightDataWindow);
