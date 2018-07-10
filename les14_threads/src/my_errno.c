@@ -78,6 +78,8 @@ void thread(int *myIndex)
         buff = errno(i);
         printf("thread %i has got %s buffer on %x address\n", *myIndex, buff, buff);
     }
+    //закомментил для наглядности, но спровоцировал утечку памяти
+    //free(buff);
 }
 
 int main(){

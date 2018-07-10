@@ -3,7 +3,7 @@ main:
 	gcc -c ./src/threadId.c -o ./obj/threadId.o
 	gcc ./obj/threadId.o -lpthread -o ./bin/res.out
 	gcc -c ./src/lifeSimulator.c -o ./obj/life.o
-	gcc ./obj/life.o -lpthread -o ./bin/life.out
+	gcc ./obj/life.o -lncurses -lpthread -o ./bin/life.out
 	gcc -g -c ./src/my_errno.c -o ./obj/errno.o
 	gcc -g ./obj/errno.o -lpthread -o ./bin/errno.out
 
