@@ -34,7 +34,7 @@ int main(){
             _exit(0);
         default:
             write(input, "Hello world", strlen("hello world"));
-            //close(input);
+            close(input);
             wait(0);
             _exit(0);
     }
