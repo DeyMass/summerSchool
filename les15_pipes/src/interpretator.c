@@ -28,9 +28,12 @@ char *my_getline()
 
 void parse_args(char** arg, char* command)
 {
-    char *pointer;
+    char *pointer = NULL;
     int flag = 0;
-    for(int i = 0; i < strlen(command); i++){
+    int i = 0;
+    while(command[i] == ' ') i++;
+    for(; i < strlen(command); i++){
+
         if (command[i] == 0) break;
         if (command[i] == ' ') {
             while(command[i] == ' ' && command[i] != 0) i++;
@@ -39,10 +42,26 @@ void parse_args(char** arg, char* command)
             break;
         }
     }
+    if (pointer != NULL) {
+        i = strlen(pointer) - 1;
+        while (pointer[i] == ' ' && i >= 0) {
+            i--;
+        }
+        pointer[i + 1] = 0;
+    }
     if(flag)
         strcpy(*arg, pointer);
     else
         strcpy(*arg, "");
+}
+
+void parse_com(char *command) {
+    for (int i = 0; i < strlen(command); i++) {
+        if (command[i] == ' ') {
+            command[i] = 0;
+            break;
+        }
+    }
 }
 
 void pipeline(char **com, int com_count, int *fd, int start) {
@@ -70,7 +89,7 @@ void pipeline(char **com, int com_count, int *fd, int start) {
         write(std_fd, com[com_count - 1], strlen(com[com_count - 1]));
         write(std_fd, "\n", 1);
         system(com[com_count - 1]);
-        exit(0);
+        exit(155);
     } else {
         wait(NULL);
         return;
@@ -81,24 +100,12 @@ void pipeline(char **com, int com_count, int *fd, int start) {
 void recursive_call(char** programs, char** args, int count) {
     if (count <= 0) return;
     int fd[2];
-    char* stdOrigin = malloc(9);
-    stdOrigin[0] = '/';
-    stdOrigin[1] = 'u';
-    stdOrigin[2] = 's';
-    stdOrigin[3] = 'r';
-    stdOrigin[4] = '/';
-    stdOrigin[5] = 'b';
-    stdOrigin[6] = 'i';
-    stdOrigin[7] = 'n';
-    stdOrigin[8] = 0;
     for (int i = 0; i < count; i++) {
         pipe(fd);
         if (fork() == 0) {
             char path[1024];
             path[0] = 0;
-//            strcpy(path, stdOrigin);
             strcat(path, programs[i]);
-            printf("start %s",path);
             dup2(fd[1], STDOUT_FILENO);
             close(fd[0]);
             if (args[i][0] == ' ' || args[i][0] == 0) {
@@ -134,6 +141,7 @@ int main(int argc, char* argv[])
     while(!isExit){
         write(STDOUT_FILENO, "> ", 2);
         buff = my_getline();
+        if (!strcmp(buff, "quit\n")) break;
         for (int i = 0; i < strlen(buff); i++){
             if (buff[i] == '|' || buff[i] == '\n'){
                 for(int j = start; j < i; j++){
@@ -146,24 +154,20 @@ int main(int argc, char* argv[])
                     if (command[j] == ' ') command[j] = 0;
                     else break;
                 }
-                parse_args(&arg, command);
 
-                for (int i = 0; i < strlen(command); i++){
-                    if(command[i] == ' ') {
-                        command[i] = 0;
-                        break;
-                    }
-                }
+                parse_args(&arg, command);
+                parse_com(command);
+
                 strcpy(args[count_com], arg);
                 strcpy(commands[count_com++], command);
 
-                printf("parsed args: %s\n",arg);
+//                printf("parsed args: %s\n",arg);
                 start = i;
             }
         }
-        for (int i = 0; i < count_com; i++){
-            printf("command %s (args %s) (count = %i)\n",commands[i],args[i], count_com);
-        }
+//        for (int i = 0; i < count_com; i++){
+//            printf("command %s (args %s) (count = %i)\n",commands[i],args[i], count_com);
+//        }
         recursive_call(commands, args, count_com);
         start = 0;
         count_com = 0;

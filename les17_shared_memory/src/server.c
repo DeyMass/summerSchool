@@ -34,16 +34,18 @@ int main()
     key_t sem_key = ftok("/home/michail/summerSchool/les1/Makefile", 'A');
     int id = shmget(key, MAX_MSG_SIZE, IPC_CREAT | 0664);
     //semaphore 0 is counting clients
-    //semaphore 1 is detecting a new input string
+    //semaphore 1 is detecting a new input string (sync semaphore
     sem_id = semget(sem_key, 2 + MAX_CLIENTS, IPC_CREAT | 0664);
     semctl(sem_id, 0, SETVAL, 2);
     semctl(sem_id, 1, SETVAL, 0);
 
     msg = shmat(id, 0, 0);
-    struct sembuf logic[3] = {{1, -1, 0}, {1, 0, 0}, {1, 1, 0}};
     int isExit = 0;
     pthread_t pid;
-    pthread_create(&pid, NULL, printStatus, NULL);
+    //shows status of the semaphores
+    pthread_create(&pid, NULL, (void*)printStatus, NULL);
+    //waits for sync signal on semaphore
+    struct sembuf logic[3] = {{1, -1, 0}, {1, 0, 0}, {1, 1, 0}};
     while(!isExit){
         semop(sem_id, logic, 3);
         printf("message!\n");

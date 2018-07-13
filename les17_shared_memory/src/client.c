@@ -70,6 +70,7 @@ void reader_thread()
 
 int main()
 {
+    write(STDOUT_FILENO, "Enter your nickname: ", strlen("Enter your nickname: "));
     nickname = my_getline();
     int nickLength = strlen(nickname);
     nickname[nickLength - 1] = ':';

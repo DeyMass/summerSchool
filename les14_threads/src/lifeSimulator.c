@@ -84,14 +84,14 @@ void provider_logic(int *myIndex)
         isProvided = 0;
         for(int storage_index = 0; storage_index < N_STORAGES; storage_index++){
             if (pthread_mutex_trylock(&storage_mut[storage_index]) == 0) {
-                print_provider_status(*myIndex, 0, storage_index);
+                //print_provider_status(*myIndex, 0, storage_index);
                 provide(storage_index);
-                //printf("provider %i delivered some goods to %i storage (now it has %i)\n", *myIndex, storage_index, remains[storage_index]);
+                printf("provider %i delivered some goods to %i storage (now it has %i)\n", *myIndex, storage_index, remains[storage_index]);
                 isProvided = 1;
                 sleep(LOAD_DELAY);
-                print_provider_status(*myIndex, 1, storage_index);
+                //print_provider_status(*myIndex, 1, storage_index);
                 pthread_mutex_unlock(&storage_mut[storage_index]);
-                //printf("provider falled asleep for %i secs\n", PROV_SLEEP);
+                printf("provider falled asleep for %i secs\n", PROV_SLEEP);
                 break;
             }
         }
@@ -152,13 +152,13 @@ void buyer_logic(int *myIndex)
     while(demands[*myIndex] > 0) {
         for (int storage_index = 0; storage_index < N_STORAGES; storage_index++) {
             if (remains[storage_index] > 0 && pthread_mutex_trylock(&storage_mut[storage_index]) == 0) {
-                print_buyer_status(*myIndex, 1, storage_index);
-                //printf("Buyer %i (want %i) entered storage %i (storage has %i)\n", *myIndex, demands[*myIndex], storage_index, remains[storage_index]);
+                //print_buyer_status(*myIndex, 1, storage_index);
+                printf("Buyer %i (want %i) entered storage %i (storage has %i)\n", *myIndex, demands[*myIndex], storage_index, remains[storage_index]);
                 buy(storage_index, myIndex);
                 sleep(LOAD_DELAY);
                 pthread_mutex_unlock(&storage_mut[storage_index]);
-                print_buyer_status(*myIndex, 0, storage_index);
-                //printf("Buyer %i (want %i) exited storage %i (storage has %i)\n", *myIndex, demands[*myIndex], storage_index, remains[storage_index]);
+                //print_buyer_status(*myIndex, 0, storage_index);
+                printf("Buyer %i (want %i) exited storage %i (storage has %i)\n", *myIndex, demands[*myIndex], storage_index, remains[storage_index]);
             }
         }
         sleep(BUYER_SLEEP);
