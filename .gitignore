@@ -13,3 +13,5 @@ CMake*
 *tar*
 *rpm*
 *deb*
+./ebin/
+*.beam
