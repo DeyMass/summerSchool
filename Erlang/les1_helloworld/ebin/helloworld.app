@@ -1,9 +1,0 @@
-{application,helloworld,
-             [{description,[]},
-              {vsn,"1"},
-              {registered,[]},
-              {applications,[kernel,stdlib]},
-              {mod,{helloworld_app,[]}},
-              {env,[]},
-              {modules,[helloworld_app,helloworld_sup,my_ackerman,my_module,
-                        my_pow,my_replace,my_reverse,my_sum]}]}.
