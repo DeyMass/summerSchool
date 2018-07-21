@@ -7,4 +7,6 @@
 reverse([H]) ->
     [H];
 reverse([H|T]) ->
-    reverse(T) ++ [H].
+    reverse(T) ++ [H];
+reverse([]) ->
+    [].
