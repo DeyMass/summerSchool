@@ -16,3 +16,5 @@ CMake*
 ./ebin/
 *.beam
 *.app*
+*.dump
+./.rebar/

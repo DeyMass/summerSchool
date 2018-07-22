@@ -2,6 +2,7 @@
 
 -record(user, {num, name, phone}).
 
+-export ([serverStart/0]).
 -export ([quicksort_tail/1]).
 -export([search/2]).
 -export([book_read/0]).
@@ -60,7 +61,8 @@ quicksort_tail(H, Small, Great, [First|Rem]) when H =< First ->
 %%shows records from 'raw_book.txt' text file
 book_read() ->
     {ok, File} = file:open("raw_book.txt", [read]),
-    read_raw(File, []).
+    quicksort(read_raw(File, [])).
+
 
 search(Value, Type) ->
     List = book_read(),
@@ -87,3 +89,25 @@ search([TupleList | T], Key, Type) ->
             search(T, Key, Type)
     end;
 search([],_,_) -> io:format("NotFound ~n").
+
+
+%need to 'spawn' serverStart procedure
+%accepts only {<sender pid>, "key", name|phone|num}
+serverStart() ->
+    receive
+        {Who, What, By} ->
+            case By of
+                phone ->
+                    SearchType = phone;
+                name ->
+                    SearchType = name;
+                num ->
+                    SearchType = num;
+                _ ->
+                    SearchType = num
+            end,
+            Who ! search(What, SearchType),
+            serverStart();
+        _ ->
+            serverStart()
+    end.

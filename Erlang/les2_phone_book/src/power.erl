@@ -1,18 +1,15 @@
 -module (power).
 
--export ([test/1]).
+-export ([test/2]).
 
- % -define (POW (Base, Exp), begin
- %              Calc = fun(Base, Exp, Res) when Exp > 0 ->
- %                  R = fun(NewBas, NewExp, NewRes) ->
- %                      Calc(NewBas, NewExp - 1, NewRes * Base)
- %                  end,
- %                  R(Base, Exp, Res)
- %              end,
- %              Calc(A, A, 1)
- %             end).
+ -define (POW (Base, Exp), begin
+              Fun = fun
+                  Pow(_, 0, Res) -> Res;
+                  Pow(B, E, Res) -> Pow(B, E-1, Res*B)
+              end,
+              Fun(Base, Exp, 1)
+         end).
 
 
-test(A) ->
-    % ?POW(A,2).
-    A.
+test(Base, Exp) ->
+    ?POW(Base, Exp).
