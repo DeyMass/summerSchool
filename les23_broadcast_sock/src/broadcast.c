@@ -27,7 +27,7 @@ int main()
     setsockopt(fd, SOL_SOCKET, SO_BROADCAST, &val, sizeof(val));
     bind(fd, (struct sockaddr*)&addr, sizeof(addr));
     socklen_t len = sizeof(addr);
-    char buffer[256] = "Hello my clients!";
+    char buffer[256];
     if (errno != 0){
         printf("Error %s",strerror(errno));
         return -1;

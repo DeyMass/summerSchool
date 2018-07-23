@@ -29,9 +29,10 @@ int main()
         return -1;
     }
     char buffer[256];
+    strcpy(buffer, "Hello, client!");
     for(int i = 0; i < 10; i++) {
         sendto(fd, buffer, 256, 0, (struct sockaddr*)&addr, sizeof(addr));
-        printf("received %s\n", buffer);
+        printf("sended %s\n", buffer);
         sleep(2);
     }
 }
