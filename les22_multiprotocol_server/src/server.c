@@ -214,6 +214,7 @@ void server_on_select()
 
 int main(int argc, char* argv[])
 {
+    if(argc == 1) return -1;
     if (!strcmp(argv[argc-1], "epoll")) {
         server_on_epoll();
     }else
