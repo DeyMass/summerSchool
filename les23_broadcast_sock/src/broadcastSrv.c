@@ -32,6 +32,7 @@ int main()
     char buffer[256];
     for(int i = 0; i < 10; i++) {
         sendto(fd, buffer, 256, 0, (struct sockaddr*)&addr, sizeof(addr));
+        printf("received %s\n", buffer);
         sleep(2);
     }
 }

@@ -34,6 +34,7 @@ int main()
     }
     for(int i = 0; i < 5; i++) {
         recvfrom(fd, buffer, 256, 0, (struct sockaddr*)&addr, &len);
+        printf("received %s\n", buffer);
         sleep(1);
     }
 
