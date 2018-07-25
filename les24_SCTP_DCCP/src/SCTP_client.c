@@ -34,7 +34,6 @@ int main()
     if (errno != 0){
         printf("ERROR: %s\n",strerror(errno));
     }
-    sInfo.sinfo_stream = 15;
     for(int i = 0; i < 15; i++){
 
         sctp_recvmsg(sock, buffer, 256, NULL, 0, &sInfo, 0);
@@ -42,6 +41,8 @@ int main()
         buffer[0] = 'K';
         buffer[1] = 'Z';
         sctp_send(sock, buffer, 256, &sInfo, 0);
+        buffer[0] = 0;
+        buffer[1] = 'G';
         sleep(1);
     }
 }

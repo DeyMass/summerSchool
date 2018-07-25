@@ -16,11 +16,10 @@
 int main()
 {
     int sock = socket(AF_INET, SOCK_STREAM, IPPROTO_SCTP);
-    char buffer[256];
-    strcpy(buffer, "Hello, client");
+    char buffer[256] = "Hello, client!";
     //----------------------------------------------
     struct sockaddr_in addr;
-    addr.sin_addr.s_addr = inet_addr("127.0.0.1");
+    addr.sin_addr.s_addr = htonl(INADDR_ANY);//inet_addr(INADDR_ANY);
     addr.sin_family      = AF_INET;
     addr.sin_port        = htons(BEST_PORT_EVAR);
     //----------------------------------------------
