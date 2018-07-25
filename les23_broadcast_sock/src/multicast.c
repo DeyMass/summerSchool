@@ -29,7 +29,7 @@ int main()
     bzero(&R, sizeof(R));
     R.imr_multiaddr.s_addr = inet_addr("224.0.0.1");
     setsockopt(fd, IPPROTO_IP, IP_ADD_MEMBERSHIP, &R, sizeof(R));
-    setsockopt(fd, SOL_SOCKET, SO_BROADCAST, &val, sizeof(val));
+    //setsockopt(fd, SOL_SOCKET, SO_BROADCAST, &val, sizeof(val));
     bind(fd, (struct sockaddr*)&addr, sizeof(addr));
     socklen_t len = sizeof(addr);
     char buffer[256];

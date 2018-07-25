@@ -22,7 +22,7 @@ int main()
     int val = 1;
     struct sockaddr_in addr;
     addr.sin_family = AF_INET;
-    addr.sin_addr.s_addr = inet_addr("224.0.0.1");
+    addr.sin_addr.s_addr = inet_addr("224.0.0.251");
     addr.sin_port = htons(BEST_PORT_EVAR);
     if (errno != 0){
         printf("Error %s",strerror(errno));
