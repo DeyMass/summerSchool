@@ -1,0 +1,53 @@
+-module(fsm).
+
+-export([fsm_start/0]).
+
+messageHandler() ->
+	receive 
+		{Type, Reason} ->
+			case Type of
+				error ->
+					io:format("error because ~s~n",[Reason]);
+				info ->
+					io:format("info: ~s~n", [Reason]);
+				_ ->
+					io:format("warning: ~s~n", [Reason])
+				end
+	end.
+
+fsm_start() ->
+	MsgHandler = spawn(fsm, messageHandler, []),
+	fsm(initiate, MsgHandler, [], 0).
+
+fsm(State, MsgHandler, List, Socket) ->
+    case State of
+		initiate ->
+			{Status, Reason} = gen_udp:open(7777),
+			case Status of
+				ok ->
+					MsgHandler ! {info, "socket initiated successfully"};
+				error ->
+					MsgHandler ! {error, Reason};
+				_ ->
+					MsgHandler ! {Status, Reason}
+				end,
+			{ok, File} = file:open("base.txt",[read]),
+			case file:read_line(File) of
+				{ok, Data} ->
+					fsm(work, MsgHandler, Data, Reason);
+				{Status, Reason}  ->
+					MsgHandler ! {error, Reason}
+			end;
+		work ->
+			DrawBack = gen_udp:recv(Socket, 2),
+			case DrawBack of
+				{_, {ClientAddr, ClientPort, Data}} ->
+					
+					MsgHandler ! {info, "received"},
+					MsgHandler ! {info, Data},
+					gen_udp:send(Socket, ClientAddr, ClientPort, List),
+					fsm(work, MsgHandler, List, Socket);
+				{Err, Stat} ->
+					MsgHandler ! {Err, Stat}
+			end
+    end.
