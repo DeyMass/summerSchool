@@ -14,7 +14,7 @@ int main()
     struct sockaddr_in address;
     bzero(&address, sizeof(address));
     address.sin_family = AF_INET;
-    address.sin_addr.s_addr = inet_addr("192.168.0.30");
+    address.sin_addr.s_addr = inet_addr("127.0.0.1");
     address.sin_port = htons(1555);
 
     //int sock = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
@@ -30,9 +30,9 @@ int main()
         exit(1);
     }
     while(1) {
-        send(sock, buff, 25, 0);
+        send(sock, buff, 5, 0);
         //sendto(sock, buff, 25, 0, &address, sizeof(address));
-        recv(sock, buff, 25, 0);
+        recv(sock, buff, 5, 0);
         //if (buff[1] == 'Z') break;
         //recvfrom(sock, buff, 25, 0, &address, &addrlen);
         printf("%s\n", buff);

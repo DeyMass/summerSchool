@@ -11,6 +11,7 @@
 #include <errno.h>
 #include <stdio.h>
 #include <netinet/ip.h>
+#include <stdbool.h>
 
 #define BEST_PORT_EVAR 7777
 
@@ -92,7 +93,7 @@ int main()
 
     //----------------------------------------------
     struct sockaddr_in addr;
-    addr.sin_addr.s_addr = inet_addr("192.168.0.30");
+    addr.sin_addr.s_addr = inet_addr("127.0.0.1");
     addr.sin_family      = AF_INET;
     addr.sin_port        = htons(BEST_PORT_EVAR);
     socklen_t len = sizeof(addr);

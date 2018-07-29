@@ -26,17 +26,15 @@ void tcpServer()
     bind(sock, &address, sizeof(address));
     listen(sock, 5);
 
-    char buff[25];
+    char buff[256];
     int addrlen = sizeof(address);
     int subsocket = accept(sock, &address, &addrlen);
     for(int i = 0; i < 26; i++) {
-        recv(subsocket, buff, 25, 0);
-        //recvfrom(sock, buff, 25, 0, &address, &addrlen);
+        recv(subsocket, buff, 256, 0);
 
         buff[1] = 'A' + i;
 
-        send(subsocket, buff, 25, 0);
-        //sendto(sock, buff, 25, 0, &address, sizeof(address);
+        send(subsocket, buff, 5, 0);
         printf("%s\n", buff);
     }
 }
