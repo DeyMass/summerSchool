@@ -22,6 +22,10 @@ struct sockaddr_ll {
 };
 
 struct __attribute__((packed)) packet {
+    unsigned char h_dest[6];
+    unsigned char h_src[6];
+    unsigned int h_proto:16;
+//IPHEADER
     unsigned int version:4;
     unsigned int IHL:4;
     unsigned int DSCP:6;
@@ -58,12 +62,29 @@ int main()
     char *cp;
     unsigned short int *sp;
     int *ip;
-    //IP HEADER
+    //ETH HEADER
     cp = &pck;
+    cp[0] = 0x48;
+    cp[1] = 0x5d;
+    cp[2] = 0x60;
+    cp[3] = 0x08;
+    cp[4] = 0x5d;
+    cp[5] = 0x1f;
+    cp[6] = 0xb8;
+    cp[7] = 0x27;
+    cp[8] = 0xeb;
+    cp[9] = 0x20;
+    cp[10] = 0xe4;
+    cp[11] = 0x2c;
+    sp = &cp[12];
+    sp[0] = htons(0x800);
+    //IP HEADER
+    cp = &sp[1];
     cp[0] = 0x45;//version 4, Header Length 20 b
     cp[1] = 0;//DSCP + ECN -> 0
     sp = &cp[2];
-    sp[0] = htons(sizeof(pck));
+    sp[0] = htons(20 + 256 + 8); //PACKET LEN
+    //48 - SIZE OF IP HEADER 8 - SIZE OF UDP HEADER 256 - BUFFER
     sp[1] = htons(1);
     cp = &sp[2];
     cp[0] = 0x40;//flag + offset is set to 010 and 0
@@ -73,13 +94,13 @@ int main()
     sp = &cp[4];
     sp[0] = 0;//checksum();// checksum
     ip = &sp[1];
-    ip[0] = inet_addr("192.168.0.60");//src address
-    ip[1] = inet_addr("192.168.0.30");//dest address
+    ip[0] = inet_addr("192.168.0.30");//src address
+    ip[1] = inet_addr("192.168.0.60");//dest address
     sp = &ip[2];
     //UDP HEADER
     sp[0] = htons(1333);//0-15 bytes SOURCE PORT
     sp[1] = htons(1555);//16-31 bytes DEST PORT
-    sp[2] = 256;
+    sp[2] = htons(256 + (16 +16 +16 + 16) / 8);
     sp[3] = 0;//checksum();
     strcpy(pck.buffer, "Hello");
 
@@ -87,20 +108,20 @@ int main()
     struct sockaddr_ll addr;
     bzero(&addr, sizeof(addr));
     //me = 48:5d:60:08:5d:1f
-//    addr.sll_addr[0] = 0x48;
-//    addr.sll_addr[1] = 0x5d;
-//    addr.sll_addr[2] = 0x60;
-//    addr.sll_addr[3] = 0x08;
-//    addr.sll_addr[4] = 0x5d;
-//    addr.sll_addr[5] = 0x1f;
+    addr.sll_addr[0] = htons(0x48);
+    addr.sll_addr[1] = htons(0x5d);
+    addr.sll_addr[2] = htons(0x60);
+    addr.sll_addr[3] = htons(0x08);
+    addr.sll_addr[4] = htons(0x5d);
+    addr.sll_addr[5] = htons(0x1f);
     //rpi = b8:27:eb:20:e4:2c
-    addr.sll_addr[0] = 0xb8;
-    addr.sll_addr[1] = 0x27;
-    addr.sll_addr[2] = 0xeb;
-    addr.sll_addr[3] = 0x20;
-    addr.sll_addr[4] = 0xe4;
-    addr.sll_addr[5] = 0x2c;
-    addr.sll_ifindex = if_nametoindex("enp5s0f5");
+//    addr.sll_addr[0] = 0xb8;
+//    addr.sll_addr[1] = 0x27;
+//    addr.sll_addr[2] = 0xeb;
+//    addr.sll_addr[3] = 0x20;
+//    addr.sll_addr[4] = 0xe4;
+//    addr.sll_addr[5] = 0x2c;
+    addr.sll_ifindex = if_nametoindex("enxb827eb20e42c");
     addr.sll_family = AF_PACKET;
     addr.sll_halen = 6;
     sendto(sock, &pck, sizeof(pck), 0, &addr, sizeof(addr));
