@@ -14,7 +14,7 @@ void tcpServer()
     struct sockaddr_in address;
     struct sockaddr_in client;
     address.sin_family = AF_INET;
-    address.sin_addr.s_addr = INADDR_ANY;
+    address.sin_addr.s_addr = htonl(INADDR_ANY);
     address.sin_port = htons(1555);
 
     //int sock = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
