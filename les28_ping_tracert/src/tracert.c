@@ -14,6 +14,7 @@
 #include <linux/if_ether.h>
 #include <errno.h>
 #include <poll.h>
+#include <CUnit/Basic.h>
 
 struct __attribute((packed)) packet{
     struct iphdr ip;
@@ -71,10 +72,10 @@ int main(int argc, char *argv[])
     cp[1] = 0;// flags + offset is set to 010 and 0
     cp[2] = 1; //ttl = 1
     ttl = &cp[2];
-    cp[3] = 1;//ICMP //17;//UDP //6; //protocol = tcp
+    cp[3] = 1;//ICMP //17;//UDP //6; //TCP //PROTOCOL
     sp = &cp[4];
     unsigned short int *csum = sp;
-    sp[0] = 0;//checksum();// checksum
+    sp[0] = 0;// checksum
     ip = &sp[1];
     ip[0] = inet_addr("192.168.0.60");//src address
     ip[1] = inet_addr(argv[argc-1]);//dest address
@@ -82,7 +83,6 @@ int main(int argc, char *argv[])
     csum[0] = checksum(ipHeaderStart, (unsigned short int*)&ip[2]);
 
     int val = 1;
-    //dup2(recsock, sock);
     setsockopt(sock, SOL_IP, IP_HDRINCL, &val, sizeof(val));
     //----------------------------------------------
     struct sockaddr_in addr;
@@ -103,8 +103,7 @@ int main(int argc, char *argv[])
     pck.icmp.type = 8;
     pck.icmp.code = 0;
     printf("--------------------------------");
-    pck.icmp.checksum = checksum(&pck.icmp, &pck.icmp.un);
-    //pck.icmp.checksum = htons(0xF7FF);//checksum(&pck.icmp, &pck.icmp + sizeof(struct icmphdr));//checksum(&pck, &pck + sizeof(pck));
+    pck.icmp.checksum = checksum(&pck.icmp.type, &pck.icmp.type + sizeof(struct icmphdr));
 
     printf("--------------------------------\n");
     struct rcvpacket rcv;

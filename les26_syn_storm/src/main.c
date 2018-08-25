@@ -15,7 +15,29 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define BEST_PORT_EVAR 1555
+#define SRC_PORT 1333
+#define DST_PORT 1555
+#define SRC_ADDR "192.168.0.60"
+#define DST_ADDR "192.168.0.30"
+
+struct __attribute__((packed)) tcp_pseudo_header{
+    unsigned int saddr:32;
+    unsigned int daddr:32;
+    unsigned int zeros:8;
+    unsigned int protocol:8;
+    unsigned int tcp_len:16;
+    unsigned int sport:16;
+    unsigned int dport:16;
+    unsigned int snum:32;
+    unsigned int sacknum:32;
+    unsigned int dataofft:4;
+    unsigned int reserved:4;
+    unsigned int flags:8;
+    unsigned int window:16;
+    unsigned int csum:16;
+    unsigned int urg:16;
+    unsigned char opts[20];
+};
 
 struct __attribute__((packed)) packet {
     unsigned int version:4;
@@ -84,10 +106,12 @@ int main()
     struct packet pck;
     bzero(&pck, sizeof(pck));
     unsigned short int *csum;
+    unsigned short int *tcpHeaderStart;
     char *cp;
     unsigned short int *sp;
     int *ip;
     int *seqNum;
+    //IP HEADER
     cp = &pck;
     cp[0] = 0x45;//version 4, Header Length 20 b
     cp[1] = 0;//DSCP + ECN -> 0
@@ -102,12 +126,14 @@ int main()
     sp = &cp[4];
     csum = sp;
     ip = &sp[1];
-    ip[0] = inet_addr("192.168.0.60");//src address
-    ip[1] = inet_addr("192.168.0.30");//dest address
+    ip[0] = inet_addr(SRC_ADDR);//src address
+    ip[1] = inet_addr(DST_ADDR);//dest address
     csum[0] = checksum(&pck, &ip[2]);
     sp = &ip[2];
-    sp[0] = htons(1333);//0-15 bytes SOURCE PORT
-    sp[1] = htons(1555);//16-31 bytes DEST PORT
+    //TCP HEADER
+    tcpHeaderStart = &ip[2];
+    sp[0] = htons(SRC_PORT);//0-15 bytes SOURCE PORT
+    sp[1] = htons(DST_PORT);//16-31 bytes DEST PORT
     ip = &sp[2];
     seqNum = &sp[2];
     ip[0] = htonl(10);//32-63 bytes SEQ NUM
@@ -119,6 +145,7 @@ int main()
     sp = &cp[2];
     sp[0] = htons(2048);//112-127 bytes WIN SIZE
     sp[1] = 0; //128-144 bytes CHECKSUM
+    csum = &sp[1];
     sp[2] = 0; //145-159 bytes URG PTR
     //OPT MAX SEG
     cp = &sp[3];
@@ -134,7 +161,7 @@ int main()
     cp[2] = 0x8;
     cp[3] = 0xA;
     ip = &cp[4];
-    ip[0] = htonl((unsigned int)rand());
+    ip[0] = htonl(12345);
     ip[1] = 0;
     //OPT NO OP
     cp = &ip[2];
@@ -143,14 +170,31 @@ int main()
     cp[1] = 0x3;
     cp[2] = 0x3;
     cp[3] = 0x7;
+    //fill pseudo header
+    struct tcp_pseudo_header tph;
+    tph.saddr = inet_addr(SRC_ADDR);
+    tph.daddr = inet_addr(DST_ADDR);
+    tph.protocol = 0x6;
+    tph.tcp_len = htons(40);
+    tph.sport = htons(SRC_PORT);
+    tph.dport = htons(DST_PORT);
+    tph.snum = pck.snum;
+    tph.sacknum = pck.anum;
+    tph.dataofft = pck.dataOfft;
+    tph.reserved = pck.flags;
+    tph.window = pck.winsz;
+    tph.csum = 0;
+    tph.urg = pck.urg;
+    strcpy(tph.opts, pck.opts);
 
+    csum[0] = checksum(&tph, &tph.opts[20]);
     printf("Size of pck = %i\n",sizeof(pck));
 
     //----------------------------------------------
     struct sockaddr_in addr;
-    addr.sin_addr.s_addr = inet_addr("192.168.0.30");
+    addr.sin_addr.s_addr = inet_addr(DST_ADDR);
     addr.sin_family      = AF_INET;
-    addr.sin_port        = htons(BEST_PORT_EVAR);
+    addr.sin_port        = htons(DST_PORT);
     socklen_t len = sizeof(addr);
     //----------------------------------------------
 
@@ -158,7 +202,7 @@ int main()
         printf("Error %s\n",strerror(errno));
     }
     int val = 1;
-    setsockopt(sock, IPPROTO_IP, IP_HDRINCL, &val, sizeof(val));
+    setsockopt(sock, SOL_IP, IP_HDRINCL, &val, sizeof(val));
 //    while(1) {
 //        for (int i = 0; i < 65535; i++) {
 //            *seqNum = htonl(i);

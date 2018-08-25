@@ -61,8 +61,7 @@ int main(int argc, char* argv[])
     pck.icmp.type = 8;
     pck.icmp.code = 0;
     printf("--------------------------------");
-    pck.icmp.checksum = htons(0xf6ff);//checksum(&pck, &pck + sizeof(pck));
-    pck.icmp.checksum = checksum(&pck.icmp, &pck.icmp.un);
+    pck.icmp.checksum = checksum(&pck.icmp.type, &pck.icmp.type + sizeof(struct icmphdr));
     printf("--------------------------------\n");
     sendto(sock, &pck, sizeof(pck), 0, (struct sockaddr*)&addr, len);
     struct rcvpacket rcv;
