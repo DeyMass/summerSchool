@@ -1,0 +1,1 @@
+cmd_/home/michail/summerSchool/les29_linux_modules/driver.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/michail/summerSchool/les29_linux_modules/driver.ko /home/michail/summerSchool/les29_linux_modules/driver.o /home/michail/summerSchool/les29_linux_modules/driver.mod.o ;  true

@@ -130,3 +130,1157 @@
 2018-08-24 13:30:07.019 [info] <0.498.0>@nkservice_srv_listen_sup:add_transport:132 Service ayr8ncm started listener on tls:{0,0,0,0}:5061 (nksip_protocol)
 2018-08-24 13:30:07.086 [info] <0.33.0>@nkservice:start:133 Service client2 (ayr8ncm) has started
 2018-08-24 13:30:13.466 [info] <0.713.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,0,30},5061}: econnrefused
+2018-08-26 12:50:13.327 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 12:50:13.402 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 12:50:13.446 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 12:50:13.453 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 12:50:13.494 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 12:50:13.507 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 12:50:13.572 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 12:50:29.634 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-26 12:50:29.634 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 12:50:45.636 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-26 12:50:45.636 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 12:50:58.645 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-26 12:50:58.645 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 12:50:59.033 [info] <0.118.0>@nkpacket_stun:get_stun_servers:260 Checking STUN stun.freeswitch.org
+2018-08-26 12:50:59.540 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 12:50:59.540 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 80.89.157.11
+2018-08-26 12:50:59.540 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 12:50:59.558 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 12:50:59.603 [info] <0.141.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 12:50:59.603 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 12:50:59.738 [info] <0.147.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 12:50:59.738 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 12:52:18.080 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 12:52:18.106 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 12:52:18.106 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 12:52:18.137 [info] <0.188.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:52:18.137 [error] <0.188.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrnotavail)
+2018-08-26 12:52:18.137 [error] <0.188.0> CRASH REPORT Process <0.188.0> with 0 neighbours exited with reason: eaddrnotavail in gen_server:init_it/6 line 344
+2018-08-26 12:52:18.138 [error] <0.187.0> CRASH REPORT Process <0.187.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrnotavail}}} in gen_server:init_it/6 line 344
+2018-08-26 12:52:50.276 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 12:52:50.300 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 12:52:50.340 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 12:52:50.345 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 12:52:50.379 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 12:52:50.387 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 12:52:50.481 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 12:52:55.610 [info] <0.118.0>@nkpacket_stun:get_stun_servers:260 Checking STUN stun.freeswitch.org
+2018-08-26 12:52:56.112 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 12:52:56.112 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 80.89.157.11
+2018-08-26 12:52:56.112 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 12:52:56.137 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 12:52:56.192 [info] <0.133.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 12:52:56.192 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 12:52:56.299 [info] <0.139.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 12:52:56.300 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 12:54:19.603 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 12:54:19.605 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 12:54:19.606 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 12:54:19.622 [info] <0.181.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:54:19.623 [info] <0.181.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (5)
+2018-08-26 12:54:20.623 [info] <0.181.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:54:20.624 [info] <0.181.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (4)
+2018-08-26 12:54:21.624 [info] <0.181.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:54:21.624 [info] <0.181.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (3)
+2018-08-26 12:54:22.625 [info] <0.181.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:54:22.626 [info] <0.181.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (2)
+2018-08-26 12:54:23.626 [info] <0.181.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:54:23.627 [info] <0.181.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (1)
+2018-08-26 12:54:24.627 [info] <0.181.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:54:24.628 [error] <0.181.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrinuse)
+2018-08-26 12:54:24.628 [error] <0.181.0> CRASH REPORT Process <0.181.0> with 0 neighbours exited with reason: eaddrinuse in gen_server:init_it/6 line 344
+2018-08-26 12:54:24.629 [error] <0.180.0> CRASH REPORT Process <0.180.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrinuse}}} in gen_server:init_it/6 line 344
+2018-08-26 12:59:31.885 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 12:59:31.885 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 12:59:31.885 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 12:59:31.891 [info] <0.254.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:59:31.891 [info] <0.254.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (5)
+2018-08-26 12:59:32.891 [info] <0.254.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:59:32.892 [info] <0.254.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (4)
+2018-08-26 12:59:33.892 [info] <0.254.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:59:33.893 [info] <0.254.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (3)
+2018-08-26 12:59:34.893 [info] <0.254.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:59:34.894 [info] <0.254.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (2)
+2018-08-26 12:59:35.894 [info] <0.254.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:59:35.895 [info] <0.254.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (1)
+2018-08-26 12:59:36.895 [info] <0.254.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:59:36.896 [error] <0.254.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrinuse)
+2018-08-26 12:59:36.896 [error] <0.254.0> CRASH REPORT Process <0.254.0> with 0 neighbours exited with reason: eaddrinuse in gen_server:init_it/6 line 344
+2018-08-26 12:59:36.897 [error] <0.253.0> CRASH REPORT Process <0.253.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrinuse}}} in gen_server:init_it/6 line 344
+2018-08-26 12:59:49.839 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 12:59:49.839 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 12:59:49.839 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 12:59:49.845 [info] <0.263.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:59:49.846 [info] <0.263.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (5)
+2018-08-26 12:59:50.846 [info] <0.263.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:59:50.847 [info] <0.263.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (4)
+2018-08-26 12:59:51.847 [info] <0.263.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:59:51.847 [info] <0.263.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (3)
+2018-08-26 12:59:52.848 [info] <0.263.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:59:52.849 [info] <0.263.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (2)
+2018-08-26 12:59:53.849 [info] <0.263.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:59:53.850 [info] <0.263.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (1)
+2018-08-26 12:59:54.850 [info] <0.263.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 12:59:54.851 [error] <0.263.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrinuse)
+2018-08-26 12:59:54.851 [error] <0.263.0> CRASH REPORT Process <0.263.0> with 0 neighbours exited with reason: eaddrinuse in gen_server:init_it/6 line 344
+2018-08-26 12:59:54.851 [error] <0.262.0> CRASH REPORT Process <0.262.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrinuse}}} in gen_server:init_it/6 line 344
+2018-08-26 13:00:02.192 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 13:00:02.193 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 13:00:02.193 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 13:00:02.198 [info] <0.272.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:00:02.198 [info] <0.272.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (5)
+2018-08-26 13:00:03.199 [info] <0.272.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:00:03.199 [info] <0.272.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (4)
+2018-08-26 13:00:04.201 [info] <0.272.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:00:04.201 [info] <0.272.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (3)
+2018-08-26 13:00:05.202 [info] <0.272.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:00:05.203 [info] <0.272.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (2)
+2018-08-26 13:00:06.205 [info] <0.272.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:00:06.205 [info] <0.272.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (1)
+2018-08-26 13:00:07.207 [info] <0.272.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:00:07.207 [error] <0.272.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrinuse)
+2018-08-26 13:00:07.208 [error] <0.272.0> CRASH REPORT Process <0.272.0> with 0 neighbours exited with reason: eaddrinuse in gen_server:init_it/6 line 344
+2018-08-26 13:00:07.208 [error] <0.271.0> CRASH REPORT Process <0.271.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrinuse}}} in gen_server:init_it/6 line 344
+2018-08-26 13:00:36.552 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 13:00:36.553 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 13:00:36.553 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 13:00:36.560 [info] <0.285.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:00:36.560 [info] <0.285.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (5)
+2018-08-26 13:00:37.561 [info] <0.285.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:00:37.562 [info] <0.285.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (4)
+2018-08-26 13:01:02.519 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 13:01:02.542 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 13:01:02.593 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 13:01:02.597 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 13:01:02.664 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 13:01:02.674 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 13:01:02.743 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 13:01:10.934 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-26 13:01:10.934 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 13:01:10.941 [info] <0.118.0>@nkpacket_stun:get_stun_servers:260 Checking STUN stun.voxgratia.org
+2018-08-26 13:01:11.170 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 13:01:11.170 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 80.89.157.11
+2018-08-26 13:01:11.171 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 13:01:11.187 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 13:01:11.241 [info] <0.133.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 13:01:11.241 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 13:01:11.323 [info] <0.139.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 13:01:11.324 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 13:01:30.766 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 13:01:30.772 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 13:01:30.772 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 13:01:30.804 [info] <0.169.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:01:30.804 [info] <0.169.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (5)
+2018-08-26 13:01:31.805 [info] <0.169.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:01:31.805 [info] <0.169.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (4)
+2018-08-26 13:01:32.806 [info] <0.169.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:01:32.806 [info] <0.169.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (3)
+2018-08-26 13:01:33.807 [info] <0.169.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:01:33.807 [info] <0.169.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (2)
+2018-08-26 13:01:34.807 [info] <0.169.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:01:34.808 [info] <0.169.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (1)
+2018-08-26 13:01:35.809 [info] <0.169.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:01:35.809 [error] <0.169.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrinuse)
+2018-08-26 13:01:35.809 [error] <0.169.0> CRASH REPORT Process <0.169.0> with 0 neighbours exited with reason: eaddrinuse in gen_server:init_it/6 line 344
+2018-08-26 13:01:35.810 [error] <0.168.0> CRASH REPORT Process <0.168.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrinuse}}} in gen_server:init_it/6 line 344
+2018-08-26 13:32:45.261 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 13:32:45.261 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 13:32:45.261 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 13:32:45.266 [info] <0.565.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:32:45.267 [error] <0.565.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrnotavail)
+2018-08-26 13:32:45.267 [error] <0.565.0> CRASH REPORT Process <0.565.0> with 0 neighbours exited with reason: eaddrnotavail in gen_server:init_it/6 line 344
+2018-08-26 13:32:45.267 [error] <0.564.0> CRASH REPORT Process <0.564.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrnotavail}}} in gen_server:init_it/6 line 344
+2018-08-26 13:33:01.235 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 13:33:01.235 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 13:33:01.235 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 13:33:01.241 [info] <0.574.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:33:01.241 [info] <0.574.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (5)
+2018-08-26 13:33:02.242 [info] <0.574.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:33:02.242 [info] <0.574.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (4)
+2018-08-26 13:33:03.242 [info] <0.574.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:33:03.243 [info] <0.574.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (3)
+2018-08-26 13:33:04.244 [info] <0.574.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:33:04.244 [info] <0.574.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (2)
+2018-08-26 13:33:05.244 [info] <0.574.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:33:05.245 [info] <0.574.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (1)
+2018-08-26 13:33:06.245 [info] <0.574.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 13:33:06.246 [error] <0.574.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrinuse)
+2018-08-26 13:33:06.247 [error] <0.574.0> CRASH REPORT Process <0.574.0> with 0 neighbours exited with reason: eaddrinuse in gen_server:init_it/6 line 344
+2018-08-26 13:33:06.247 [error] <0.573.0> CRASH REPORT Process <0.573.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrinuse}}} in gen_server:init_it/6 line 344
+2018-08-26 14:42:15.591 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client
+2018-08-26 14:42:15.592 [info] <0.1446.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,30}},{active,once}])
+2018-08-26 14:42:15.592 [error] <0.1446.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,30}:5060 (eaddrnotavail)
+2018-08-26 14:42:15.594 [error] <0.1446.0> CRASH REPORT Process <0.1446.0> with 0 neighbours exited with reason: eaddrnotavail in gen_server:init_it/6 line 344
+2018-08-26 14:42:15.594 [error] <0.1445.0> CRASH REPORT Process <0.1445.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrnotavail}}} in gen_server:init_it/6 line 344
+2018-08-26 14:42:25.324 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client
+2018-08-26 14:42:25.325 [info] <0.1454.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 14:42:25.325 [info] <0.1454.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (5)
+2018-08-26 14:42:26.326 [info] <0.1454.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 14:42:26.326 [info] <0.1454.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (4)
+2018-08-26 14:42:27.327 [info] <0.1454.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 14:42:27.327 [info] <0.1454.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (3)
+2018-08-26 14:42:28.327 [info] <0.1454.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 14:42:28.328 [info] <0.1454.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (2)
+2018-08-26 14:42:29.328 [info] <0.1454.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 14:42:29.329 [info] <0.1454.0>@nkpacket_transport:open_port:423 gen_udp port 5060 is in use, waiting (1)
+2018-08-26 14:42:30.329 [info] <0.1454.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 14:42:30.330 [error] <0.1454.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrinuse)
+2018-08-26 14:42:30.330 [error] <0.1454.0> CRASH REPORT Process <0.1454.0> with 0 neighbours exited with reason: eaddrinuse in gen_server:init_it/6 line 344
+2018-08-26 14:42:30.330 [error] <0.1453.0> CRASH REPORT Process <0.1453.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrinuse}}} in gen_server:init_it/6 line 344
+2018-08-26 14:52:41.857 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 14:52:41.937 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 14:52:41.979 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 14:52:41.984 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 14:52:42.018 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 14:52:42.027 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 14:52:42.100 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 14:52:50.470 [notice] <0.119.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-26 14:52:50.470 [notice] <0.119.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 14:52:51.159 [info] <0.119.0>@nkpacket_stun:get_stun_servers:260 Checking STUN stun.freeswitch.org
+2018-08-26 14:52:51.662 [info] <0.119.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 14:52:51.662 [info] <0.119.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 80.89.157.11
+2018-08-26 14:52:51.662 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 14:52:51.676 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 14:52:51.732 [info] <0.134.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 14:52:51.732 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 14:52:51.859 [info] <0.140.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 14:52:51.860 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 14:53:15.054 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 14:53:15.057 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 14:53:15.057 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 14:53:15.084 [info] <0.170.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 14:53:15.089 [info] <0.171.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{192,168,0,60}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-26 14:53:15.165 [info] <0.169.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{192,168,0,60}:5060 (nksip_protocol)
+2018-08-26 14:53:15.165 [info] <0.275.0>@nkpacket_transport:open_port:418 Opening ssl:5061 ([{packet,raw},{ip,{192,168,0,60}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-26 14:53:15.274 [info] <0.169.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{192,168,0,60}:5061 (nksip_protocol)
+2018-08-26 14:53:15.397 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-26 15:04:35.510 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 15:04:35.533 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 15:04:35.537 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 15:04:35.544 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 15:04:35.556 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 15:04:35.562 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 15:04:35.591 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 15:04:43.626 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-26 15:04:43.626 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 15:04:43.631 [info] <0.118.0>@nkpacket_stun:get_stun_servers:260 Checking STUN stun.schlund.de
+2018-08-26 15:04:43.837 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 15:04:43.837 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 80.89.157.11
+2018-08-26 15:04:43.837 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 15:04:43.846 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 15:04:43.863 [info] <0.133.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 15:04:43.863 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 15:04:43.910 [info] <0.139.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 15:04:43.910 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 15:05:07.352 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 15:05:07.354 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 15:05:07.354 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 15:05:07.372 [info] <0.169.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 15:05:07.374 [info] <0.170.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{192,168,0,60}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-26 15:05:07.391 [info] <0.168.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{192,168,0,60}:5060 (nksip_protocol)
+2018-08-26 15:05:07.391 [info] <0.274.0>@nkpacket_transport:open_port:418 Opening ssl:5061 ([{packet,raw},{ip,{192,168,0,60}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-26 15:05:07.423 [info] <0.168.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{192,168,0,60}:5061 (nksip_protocol)
+2018-08-26 15:05:07.503 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-26 15:09:53.706 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 15:09:53.729 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 15:09:53.733 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 15:09:53.738 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 15:09:53.749 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 15:09:53.755 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 15:09:53.780 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 15:10:01.957 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.schlund.de
+2018-08-26 15:10:01.957 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 15:10:02.196 [info] <0.118.0>@nkpacket_stun:get_stun_servers:260 Checking STUN stun.voip.eutelia.it
+2018-08-26 15:10:02.331 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 15:10:02.331 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 80.89.157.11
+2018-08-26 15:10:02.331 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 15:10:02.339 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 15:10:02.356 [info] <0.133.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 15:10:02.356 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 15:10:02.413 [info] <0.139.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 15:10:02.413 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 15:10:31.390 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 15:10:31.400 [info] <0.170.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 15:10:31.403 [info] <0.171.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{192,168,0,60}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-26 15:10:31.422 [info] <0.169.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{192,168,0,60}:5060 (nksip_protocol)
+2018-08-26 15:10:31.423 [info] <0.275.0>@nkpacket_transport:open_port:418 Opening ssl:5061 ([{packet,raw},{ip,{192,168,0,60}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-26 15:10:31.454 [info] <0.169.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{192,168,0,60}:5061 (nksip_protocol)
+2018-08-26 15:10:31.508 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-26 15:17:59.701 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 15:17:59.726 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 15:17:59.731 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 15:17:59.738 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 15:17:59.749 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 15:17:59.755 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 15:17:59.784 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 15:18:08.070 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-26 15:18:08.070 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 15:18:08.075 [info] <0.118.0>@nkpacket_stun:get_stun_servers:260 Checking STUN stun.schlund.de
+2018-08-26 15:18:08.272 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 15:18:08.272 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 80.89.157.11
+2018-08-26 15:18:08.273 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 15:18:08.281 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 15:18:08.295 [info] <0.133.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 15:18:08.296 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 15:18:08.341 [info] <0.139.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 15:18:08.342 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 15:18:24.014 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 15:18:24.024 [info] <0.167.0>@nkpacket_transport:open_port:418 Opening gen_udp:5060 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 15:18:24.027 [info] <0.168.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{192,168,0,60}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-26 15:18:24.049 [info] <0.166.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{192,168,0,60}:5060 (nksip_protocol)
+2018-08-26 15:18:24.049 [info] <0.272.0>@nkpacket_transport:open_port:418 Opening ssl:5061 ([{packet,raw},{ip,{192,168,0,60}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-26 15:18:24.081 [info] <0.166.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{192,168,0,60}:5061 (nksip_protocol)
+2018-08-26 15:18:24.136 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-26 15:41:46.322 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 15:41:46.412 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 15:41:46.453 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 15:41:46.459 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 15:41:46.491 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 15:41:46.501 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 15:41:46.564 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 15:41:54.819 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voxgratia.org
+2018-08-26 15:41:54.819 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 15:41:54.826 [info] <0.118.0>@nkpacket_stun:get_stun_servers:260 Checking STUN stun.ideasip.com
+2018-08-26 15:41:54.994 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 15:41:54.994 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 80.89.157.11
+2018-08-26 15:41:54.994 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 15:41:55.005 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 15:41:55.049 [info] <0.133.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 15:41:55.049 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 15:41:55.166 [info] <0.139.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 15:41:55.166 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 15:42:20.117 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 15:42:20.139 [info] <0.169.0>@nkpacket_transport:open_port:418 Opening gen_udp:5070 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 15:42:20.143 [info] <0.170.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5070 ([{packet,raw},{ip,{192,168,0,60}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-26 15:42:20.230 [info] <0.168.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{192,168,0,60}:5070 (nksip_protocol)
+2018-08-26 15:42:20.230 [info] <0.274.0>@nkpacket_transport:open_port:418 Opening ssl:5071 ([{packet,raw},{ip,{192,168,0,60}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-26 15:42:20.339 [info] <0.168.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{192,168,0,60}:5071 (nksip_protocol)
+2018-08-26 15:42:20.388 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-26 15:45:43.447 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 15:45:43.470 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 15:45:43.474 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 15:45:43.476 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 15:45:43.489 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 15:45:43.495 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 15:45:43.520 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 15:45:59.549 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-26 15:45:59.549 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 15:46:04.559 [info] <0.118.0>@nkpacket_stun:get_stun_servers:260 Checking STUN stun.voxgratia.org
+2018-08-26 15:46:04.749 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 15:46:04.749 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 80.89.157.11
+2018-08-26 15:46:04.750 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 15:46:04.758 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 15:46:04.778 [info] <0.136.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 15:46:04.778 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 15:46:04.824 [info] <0.142.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 15:46:04.824 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 15:46:04.879 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 15:46:04.889 [info] <0.165.0>@nkpacket_transport:open_port:418 Opening gen_udp:5070 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 15:46:04.889 [error] <0.165.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5070 (eaddrnotavail)
+2018-08-26 15:46:04.890 [error] <0.165.0> CRASH REPORT Process <0.165.0> with 0 neighbours exited with reason: eaddrnotavail in gen_server:init_it/6 line 344
+2018-08-26 15:46:04.890 [error] <0.164.0> CRASH REPORT Process <0.164.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrnotavail}}} in gen_server:init_it/6 line 344
+2018-08-26 15:46:13.396 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 15:46:13.397 [info] <0.172.0>@nkpacket_transport:open_port:418 Opening gen_udp:5070 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 15:46:13.401 [info] <0.173.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5070 ([{packet,raw},{ip,{192,168,0,60}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-26 15:46:13.422 [info] <0.171.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{192,168,0,60}:5070 (nksip_protocol)
+2018-08-26 15:46:13.423 [info] <0.277.0>@nkpacket_transport:open_port:418 Opening ssl:5071 ([{packet,raw},{ip,{192,168,0,60}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-26 15:46:13.458 [info] <0.171.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{192,168,0,60}:5071 (nksip_protocol)
+2018-08-26 15:46:13.508 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-26 15:52:08.903 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 15:52:08.925 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 15:52:08.929 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 15:52:08.931 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 15:52:08.945 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 15:52:08.951 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 15:52:08.978 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 15:52:17.245 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-26 15:52:17.245 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 15:52:17.255 [info] <0.118.0>@nkpacket_stun:get_stun_servers:260 Checking STUN stun.ideasip.com
+2018-08-26 15:52:17.363 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 15:52:17.363 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 80.89.157.11
+2018-08-26 15:52:17.363 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 15:52:17.372 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 15:52:17.387 [info] <0.133.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 15:52:17.388 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 15:52:17.436 [info] <0.139.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 15:52:17.436 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 15:52:26.024 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 15:52:26.033 [info] <0.166.0>@nkpacket_transport:open_port:418 Opening gen_udp:5070 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 15:52:26.036 [info] <0.167.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5070 ([{packet,raw},{ip,{192,168,0,60}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-26 15:52:26.054 [info] <0.165.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{192,168,0,60}:5070 (nksip_protocol)
+2018-08-26 15:52:26.054 [info] <0.271.0>@nkpacket_transport:open_port:418 Opening ssl:5071 ([{packet,raw},{ip,{192,168,0,60}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-26 15:52:26.082 [info] <0.165.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{192,168,0,60}:5071 (nksip_protocol)
+2018-08-26 15:52:26.131 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-26 15:55:08.770 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 15:55:08.792 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 15:55:08.797 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 15:55:08.803 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 15:55:08.813 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 15:55:08.819 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 15:55:08.849 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 15:55:16.964 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-26 15:55:16.964 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 15:55:17.351 [info] <0.118.0>@nkpacket_stun:get_stun_servers:260 Checking STUN stun.voxgratia.org
+2018-08-26 15:55:17.554 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 15:55:17.554 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 80.89.157.11
+2018-08-26 15:55:17.555 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 15:55:17.562 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 15:55:17.576 [info] <0.133.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 15:55:17.576 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 15:55:17.624 [info] <0.139.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 15:55:17.624 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 15:55:31.759 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 15:55:31.769 [info] <0.167.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 15:55:31.771 [info] <0.168.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{192,168,0,60}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-26 15:55:31.793 [info] <0.166.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{192,168,0,60}:5060 (nksip_protocol)
+2018-08-26 15:55:31.794 [info] <0.272.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{192,168,0,60}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-26 15:55:31.822 [info] <0.166.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{192,168,0,60}:5061 (nksip_protocol)
+2018-08-26 15:55:31.869 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-26 15:58:36.723 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 15:58:36.745 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 15:58:36.749 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 15:58:36.755 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 15:58:36.766 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 15:58:36.772 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 15:58:36.798 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 15:58:45.021 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-26 15:58:45.022 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 15:58:45.029 [info] <0.118.0>@nkpacket_stun:get_stun_servers:260 Checking STUN stun.schlund.de
+2018-08-26 15:58:45.220 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 15:58:45.220 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 80.89.157.11
+2018-08-26 15:58:45.220 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 15:58:45.229 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 15:58:45.244 [info] <0.133.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 15:58:45.244 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 15:58:45.289 [info] <0.139.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 15:58:45.289 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 15:58:53.162 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 15:58:53.173 [info] <0.166.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 15:58:53.176 [info] <0.167.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{192,168,0,60}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-26 15:58:53.195 [info] <0.165.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{192,168,0,60}:5060 (nksip_protocol)
+2018-08-26 15:58:53.195 [info] <0.271.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{192,168,0,60}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-26 15:58:53.230 [info] <0.165.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{192,168,0,60}:5061 (nksip_protocol)
+2018-08-26 15:58:53.278 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-26 16:19:42.366 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 16:19:42.388 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 16:19:42.393 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 16:19:42.396 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 16:19:42.409 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 16:19:42.415 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 16:19:42.442 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 16:19:50.780 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-26 16:19:50.780 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 16:19:51.084 [info] <0.118.0>@nkpacket_stun:get_stun_servers:260 Checking STUN stun.voiparound.com
+2018-08-26 16:19:51.436 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 16:19:51.436 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 80.89.157.11
+2018-08-26 16:19:51.436 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 16:19:51.445 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 16:19:51.459 [info] <0.133.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 16:19:51.459 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 16:19:51.503 [info] <0.139.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 16:19:51.504 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 16:20:37.759 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 16:20:37.769 [info] <0.174.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 16:20:37.769 [info] <0.174.0>@nkpacket_transport:open_port:418 Opening gen_udp:0 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 16:20:37.772 [info] <0.175.0>@nkpacket_transport:open_port:418 Opening gen_tcp:59209 ([{packet,raw},{ip,{192,168,0,60}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-26 16:20:37.790 [info] <0.173.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{192,168,0,60}:59209 (nksip_protocol)
+2018-08-26 16:20:37.790 [info] <0.279.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{192,168,0,60}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-26 16:20:37.815 [info] <0.279.0>@nkpacket_transport:open_port:418 Opening ssl:0 ([{packet,raw},{ip,{192,168,0,60}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-26 16:20:37.829 [info] <0.173.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{192,168,0,60}:32951 (nksip_protocol)
+2018-08-26 16:20:37.882 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-26 17:26:13.268 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 17:26:13.353 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 17:26:13.395 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 17:26:13.405 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 17:26:13.456 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 17:26:13.473 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 17:26:13.615 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 17:26:21.842 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-26 17:26:21.842 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:26:21.849 [info] <0.118.0>@nkpacket_stun:get_stun_servers:260 Checking STUN stun.ekiga.net
+2018-08-26 17:26:22.011 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 17:26:22.011 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 80.89.157.11
+2018-08-26 17:26:22.012 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 17:26:22.032 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 17:26:22.059 [info] <0.133.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 17:26:22.060 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 17:26:22.220 [info] <0.139.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 17:26:22.220 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 17:26:34.248 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 17:26:34.252 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 17:26:34.253 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 17:26:34.272 [info] <0.167.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 17:26:34.276 [info] <0.168.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{192,168,0,60}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-26 17:26:34.362 [info] <0.166.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{192,168,0,60}:5060 (nksip_protocol)
+2018-08-26 17:26:34.362 [info] <0.272.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{192,168,0,60}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-26 17:26:34.494 [info] <0.166.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{192,168,0,60}:5061 (nksip_protocol)
+2018-08-26 17:26:34.586 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-26 17:26:34.820 [info] <0.378.0>@nksip_call_uac:resend:130 client1 (42ekvdvod2kMhGuHG2LGunr2VmV) UAC 83087563001 'REGISTER' (completed) resending updated request
+2018-08-26 17:42:35.225 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 17:42:35.307 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 17:42:35.348 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 17:42:35.353 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 17:42:35.408 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 17:42:35.415 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 17:42:35.487 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 17:42:43.782 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-26 17:42:43.783 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:42:43.800 [info] <0.118.0>@nkpacket_stun:get_stun_servers:260 Checking STUN stun.schlund.de
+2018-08-26 17:42:44.056 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 17:42:44.056 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 80.89.157.11
+2018-08-26 17:42:44.056 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 17:42:44.067 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 17:42:44.111 [info] <0.133.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 17:42:44.111 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 17:42:44.239 [info] <0.139.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 17:42:44.239 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 17:43:08.746 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 17:43:08.773 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 17:43:08.773 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 17:43:08.790 [info] <0.169.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 17:43:08.790 [info] <0.169.0>@nkpacket_transport:open_port:418 Opening gen_udp:0 ([binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 17:43:08.794 [info] <0.170.0>@nkpacket_transport:open_port:418 Opening gen_tcp:38561 ([{packet,raw},{ip,{192,168,0,60}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-26 17:43:08.887 [info] <0.168.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{192,168,0,60}:38561 (nksip_protocol)
+2018-08-26 17:43:08.887 [info] <0.274.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{192,168,0,60}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-26 17:43:08.990 [info] <0.274.0>@nkpacket_transport:open_port:418 Opening ssl:0 ([{packet,raw},{ip,{192,168,0,60}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-26 17:43:09.012 [warning] <0.6.0> lager_error_logger_h dropped 51 messages in the last second that exceeded the limit of 50 messages/sec
+2018-08-26 17:43:09.016 [info] <0.168.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{192,168,0,60}:33983 (nksip_protocol)
+2018-08-26 17:43:09.100 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-26 17:43:09.351 [info] <0.380.0>@nksip_call_uac:resend:130 client1 (Ds4sigc4JUQ3vb9vPhc61kDhDns) UAC 31013282001 'REGISTER' (completed) resending updated request
+2018-08-26 17:48:59.161 [info] <0.465.0>@nksip_call_uac:resend:130 client1 (Bg3I3qUR6D0CT5EjOfL2jco8IV0) UAC 2154963001 'REGISTER' (completed) resending updated request
+2018-08-26 17:50:32.354 [info] <0.490.0>@nksip_call_uac:resend:130 client1 (WxMhQ8TiBosbVz808MFAZmyJZgW) UAC 133794973001 'REGISTER' (completed) resending updated request
+2018-08-26 17:51:01.893 [info] <0.503.0>@nksip_call_uac:resend:130 client1 (56p9QK6Ar23ZOabt04uRR677cmK) UAC 78891691001 'REGISTER' (completed) resending updated request
+2018-08-26 17:51:57.338 [info] <0.519.0>@nksip_call_uac:resend:130 client1 (aqtF5MWRezqWXjRnrKYuWmkrfz1) UAC 18204210001 'REGISTER' (completed) resending updated request
+2018-08-26 17:51:58.229 [info] <0.524.0>@nksip_call_uac:resend:130 client1 (Qzq3STqcBfA0YEHYACqcAvreDAO) UAC 90291102001 'REGISTER' (completed) resending updated request
+2018-08-26 17:51:58.714 [info] <0.528.0>@nksip_call_uac:resend:130 client1 (NAiS8OM4HSNQF0O50uTqoQt7bWQ) UAC 37876089001 'REGISTER' (completed) resending updated request
+2018-08-26 17:52:37.417 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 17:52:37.519 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 17:52:37.578 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 17:52:37.582 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 17:52:37.656 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 17:52:37.667 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 17:52:37.758 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 17:52:38.055 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-26 17:52:38.055 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:52:38.075 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.schlund.de
+2018-08-26 17:52:38.075 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:52:38.097 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-26 17:52:38.097 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:52:38.119 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voip.eutelia.it
+2018-08-26 17:52:38.119 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:52:38.142 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-26 17:52:38.142 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:52:38.166 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-26 17:52:38.166 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:52:38.418 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voxgratia.org
+2018-08-26 17:52:38.418 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:52:38.442 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ideasip.com
+2018-08-26 17:52:38.442 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:52:38.522 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 17:52:38.522 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 127.0.0.1
+2018-08-26 17:52:38.522 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 17:52:38.546 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 17:52:38.580 [info] <0.132.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 17:52:38.580 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 17:52:38.707 [info] <0.138.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 17:52:38.708 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 17:52:59.870 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 17:52:59.873 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 17:52:59.873 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 17:52:59.884 [info] <0.167.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 17:52:59.887 [info] <0.168.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{192,168,0,60}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-26 17:52:59.906 [info] <0.166.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{192,168,0,60}:5060 (nksip_protocol)
+2018-08-26 17:52:59.906 [info] <0.272.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{192,168,0,60}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-26 17:52:59.939 [info] <0.166.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{192,168,0,60}:5061 (nksip_protocol)
+2018-08-26 17:53:00.006 [warning] <0.6.0> lager_error_logger_h dropped 120 messages in the last second that exceeded the limit of 50 messages/sec
+2018-08-26 17:53:00.006 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-26 17:53:00.099 [info] <0.378.0>@nksip_call_uac:resend:130 client1 (7uVHjVnwnszWMor5YHV4ceXzTQC) UAC 99321189001 'REGISTER' (completed) resending updated request
+2018-08-26 17:55:04.594 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-26 17:55:04.618 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-26 17:55:04.622 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-26 17:55:04.625 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-26 17:55:04.639 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-26 17:55:04.644 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-26 17:55:04.670 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-26 17:55:04.948 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voxgratia.org
+2018-08-26 17:55:04.948 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:55:04.969 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.schlund.de
+2018-08-26 17:55:04.969 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:55:04.990 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-26 17:55:04.990 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:55:05.014 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-26 17:55:05.014 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:55:05.359 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-26 17:55:05.360 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:55:05.379 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voip.eutelia.it
+2018-08-26 17:55:05.379 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:55:05.399 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-26 17:55:05.399 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:55:05.417 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ideasip.com
+2018-08-26 17:55:05.417 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-26 17:55:05.446 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-26 17:55:05.446 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.0.60 (::1). External IP is 127.0.0.1
+2018-08-26 17:55:05.447 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-26 17:55:05.454 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-26 17:55:05.468 [info] <0.132.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-26 17:55:05.468 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-26 17:55:05.517 [info] <0.138.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-26 17:55:05.517 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-26 17:55:14.067 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 17:55:14.070 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-26 17:55:14.070 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-26 17:55:14.080 [info] <0.164.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{192,168,0,60}},{active,once}])
+2018-08-26 17:55:14.084 [info] <0.165.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{192,168,0,60}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-26 17:55:14.102 [info] <0.163.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{192,168,0,60}:5060 (nksip_protocol)
+2018-08-26 17:55:14.103 [info] <0.269.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{192,168,0,60}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-26 17:55:14.133 [info] <0.163.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{192,168,0,60}:5061 (nksip_protocol)
+2018-08-26 17:55:14.196 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-26 17:55:14.273 [info] <0.375.0>@nksip_call_uac:resend:130 client1 (YY5ULfrQ8ADT89qNHYhjwW97Hhn) UAC 44478075001 'REGISTER' (completed) resending updated request
+2018-08-26 17:55:14.284 [info] <0.378.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,0,30},5061}: econnrefused
+2018-08-26 17:56:42.126 [info] <0.403.0>@nksip_call_uac:resend:130 client1 (KPDbRNyZEAerZc2N50WJ5j8Wi0s) UAC 56686299001 'REGISTER' (completed) resending updated request
+2018-08-26 17:56:42.131 [info] <0.405.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,0,30},5061}: econnrefused
+2018-08-27 13:13:29.673 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-27 13:13:29.774 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-27 13:13:29.819 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-27 13:13:29.825 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-27 13:13:29.868 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-27 13:13:29.878 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-27 13:13:29.945 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-27 13:13:30.013 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-27 13:13:30.013 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:13:30.015 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-27 13:13:30.015 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:13:30.018 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ideasip.com
+2018-08-27 13:13:30.018 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:13:30.021 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-27 13:13:30.021 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:13:30.025 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voxgratia.org
+2018-08-27 13:13:30.025 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:13:30.031 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.schlund.de
+2018-08-27 13:13:30.031 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:13:30.034 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voip.eutelia.it
+2018-08-27 13:13:30.034 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:13:30.037 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-27 13:13:30.037 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:13:30.083 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-27 13:13:30.084 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.2.77 (::1). External IP is 127.0.0.1
+2018-08-27 13:13:30.084 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-27 13:13:30.103 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-27 13:13:30.158 [info] <0.132.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-27 13:13:30.159 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-27 13:13:30.286 [info] <0.138.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-27 13:13:30.286 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-27 13:13:36.058 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:13:36.061 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-27 13:13:36.061 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:13:36.096 [info] <0.164.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{0,0,0,0}},{active,once}])
+2018-08-27 13:13:36.099 [info] <0.165.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{0,0,0,0}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-27 13:13:36.172 [info] <0.163.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{0,0,0,0}:5060 (nksip_protocol)
+2018-08-27 13:13:36.172 [info] <0.269.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{0,0,0,0}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-27 13:13:36.287 [info] <0.163.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{0,0,0,0}:5061 (nksip_protocol)
+2018-08-27 13:13:36.371 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-27 13:13:36.619 [info] <0.375.0>@nksip_call_uac:resend:130 client1 (RwyoBJNbJ7D9HAHd90OlD3TR9km) UAC 100672208001 'REGISTER' (completed) resending updated request
+2018-08-27 13:13:36.753 [info] <0.377.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,0,30},5061}: enetunreach
+2018-08-27 13:14:49.646 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-27 13:14:49.668 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-27 13:14:49.673 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-27 13:14:49.680 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-27 13:14:49.689 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-27 13:14:49.696 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-27 13:14:49.721 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-27 13:14:49.755 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-27 13:14:49.755 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:14:49.757 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-27 13:14:49.757 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:14:49.760 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voip.eutelia.it
+2018-08-27 13:14:49.760 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:14:49.763 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voxgratia.org
+2018-08-27 13:14:49.763 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:14:49.765 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-27 13:14:49.765 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:14:49.768 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ideasip.com
+2018-08-27 13:14:49.768 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:14:49.771 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.schlund.de
+2018-08-27 13:14:49.771 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:14:49.774 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-27 13:14:49.774 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:14:49.797 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-27 13:14:49.797 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.2.77 (::1). External IP is 127.0.0.1
+2018-08-27 13:14:49.797 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-27 13:14:49.806 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-27 13:14:49.824 [info] <0.132.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-27 13:14:49.824 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-27 13:14:49.870 [info] <0.138.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-27 13:14:49.870 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-27 13:14:56.483 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:14:56.485 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-27 13:14:56.485 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:14:56.495 [info] <0.164.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{0,0,0,0}},{active,once}])
+2018-08-27 13:14:56.498 [info] <0.165.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{0,0,0,0}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-27 13:14:56.518 [info] <0.163.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{0,0,0,0}:5060 (nksip_protocol)
+2018-08-27 13:14:56.518 [info] <0.269.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{0,0,0,0}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-27 13:14:56.548 [info] <0.163.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{0,0,0,0}:5061 (nksip_protocol)
+2018-08-27 13:14:56.612 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-27 13:14:56.691 [info] <0.375.0>@nksip_call_uac:resend:130 client1 (I5SOvsHHwMb8dGirfVwWUGCIIc6) UAC 47261163001 'REGISTER' (completed) resending updated request
+2018-08-27 13:16:46.916 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-27 13:16:46.939 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-27 13:16:46.943 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-27 13:16:46.946 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-27 13:16:46.959 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-27 13:16:46.965 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-27 13:16:46.991 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-27 13:16:47.028 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-27 13:16:47.028 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:16:47.030 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-27 13:16:47.030 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:16:47.033 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ideasip.com
+2018-08-27 13:16:47.033 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:16:47.036 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voxgratia.org
+2018-08-27 13:16:47.036 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:16:47.039 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.schlund.de
+2018-08-27 13:16:47.039 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:16:47.042 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voip.eutelia.it
+2018-08-27 13:16:47.042 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:16:47.045 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-27 13:16:47.045 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:16:47.049 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-27 13:16:47.049 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:16:47.069 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-27 13:16:47.069 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.2.77 (::1). External IP is 127.0.0.1
+2018-08-27 13:16:47.069 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-27 13:16:47.076 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-27 13:16:47.090 [info] <0.132.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-27 13:16:47.090 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-27 13:16:47.139 [info] <0.138.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-27 13:16:47.139 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-27 13:16:52.173 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:24:29.873 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-27 13:24:29.897 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-27 13:24:29.902 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-27 13:24:29.907 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-27 13:24:29.919 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-27 13:24:29.925 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-27 13:24:29.953 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-27 13:24:29.986 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ideasip.com
+2018-08-27 13:24:29.986 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:24:29.990 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-27 13:24:29.990 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:24:29.993 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-27 13:24:29.993 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:24:29.996 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-27 13:24:29.996 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:24:29.999 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voip.eutelia.it
+2018-08-27 13:24:29.999 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:24:30.002 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-27 13:24:30.002 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:24:30.003 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.schlund.de
+2018-08-27 13:24:30.003 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:24:30.005 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voxgratia.org
+2018-08-27 13:24:30.005 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:24:30.026 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-27 13:24:30.026 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.2.77 (::1). External IP is 127.0.0.1
+2018-08-27 13:24:30.026 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-27 13:24:30.032 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-27 13:24:30.047 [info] <0.132.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-27 13:24:30.047 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-27 13:24:30.098 [info] <0.138.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-27 13:24:30.098 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-27 13:24:37.774 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:24:37.777 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-27 13:24:37.777 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:24:37.787 [info] <0.164.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{0,0,0,0}},{active,once}])
+2018-08-27 13:24:37.789 [info] <0.165.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{0,0,0,0}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-27 13:24:37.808 [info] <0.163.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{0,0,0,0}:5060 (nksip_protocol)
+2018-08-27 13:24:37.809 [info] <0.269.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{0,0,0,0}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-27 13:24:37.846 [info] <0.163.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{0,0,0,0}:5061 (nksip_protocol)
+2018-08-27 13:24:37.908 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-27 13:24:37.983 [info] <0.375.0>@nksip_call_uac:resend:130 client1 (JyNZ12yGrI4fOKGzZrBXJ2znSZ9) UAC 32169515001 'REGISTER' (completed) resending updated request
+2018-08-27 13:31:59.822 [info] <0.470.0>@nksip_call_uac:resend:130 client1 (X3ekMZKbbD7QkBtXOeDEk7dDPQt) UAC 125134360001 'REGISTER' (completed) resending updated request
+2018-08-27 13:33:41.878 [info] <0.496.0>@nksip_call_uac:resend:130 client1 (NJbndrmOGFuNGpbGbRSi6xjO3Vt) UAC 15587197001 'REGISTER' (completed) resending updated request
+2018-08-27 13:35:20.126 [info] <0.521.0>@nksip_call_uac:resend:130 client1 (Zkbo5zzy6FZNtLBaSuZDXkl6ii9) UAC 64519870001 'REGISTER' (completed) resending updated request
+2018-08-27 13:47:11.749 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-27 13:47:11.773 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-27 13:47:11.835 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-27 13:47:11.841 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-27 13:47:11.872 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-27 13:47:11.882 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-27 13:47:11.953 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-27 13:47:12.006 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voxgratia.org
+2018-08-27 13:47:12.006 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:47:12.007 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-27 13:47:12.007 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:47:12.009 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voip.eutelia.it
+2018-08-27 13:47:12.009 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:47:12.010 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-27 13:47:12.010 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:47:12.016 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-27 13:47:12.016 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:47:12.019 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ideasip.com
+2018-08-27 13:47:12.019 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:47:12.022 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.schlund.de
+2018-08-27 13:47:12.022 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:47:12.024 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-27 13:47:12.024 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:47:12.064 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-27 13:47:12.064 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.2.77 (::1). External IP is 127.0.0.1
+2018-08-27 13:47:12.064 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-27 13:47:12.090 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-27 13:47:12.135 [info] <0.132.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-27 13:47:12.135 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-27 13:47:12.282 [info] <0.138.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-27 13:47:12.283 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-27 13:47:16.309 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:47:16.326 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-27 13:47:16.326 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:47:16.356 [info] <0.163.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{0,0,0,0}},{active,once}])
+2018-08-27 13:47:16.359 [info] <0.164.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{0,0,0,0}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-27 13:47:16.388 [info] <0.162.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{0,0,0,0}:5060 (nksip_protocol)
+2018-08-27 13:47:16.388 [info] <0.268.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{0,0,0,0}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-27 13:47:16.423 [info] <0.162.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{0,0,0,0}:5061 (nksip_protocol)
+2018-08-27 13:47:16.490 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-27 13:48:12.447 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-27 13:48:12.470 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-27 13:48:12.474 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-27 13:48:12.477 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-27 13:48:12.503 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-27 13:48:12.518 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-27 13:48:12.569 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-27 13:48:12.643 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-27 13:48:12.643 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:48:12.646 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.schlund.de
+2018-08-27 13:48:12.646 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:48:12.648 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voip.eutelia.it
+2018-08-27 13:48:12.648 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:48:12.651 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-27 13:48:12.651 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:48:12.654 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-27 13:48:12.654 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:48:12.658 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ideasip.com
+2018-08-27 13:48:12.658 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:48:12.661 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voxgratia.org
+2018-08-27 13:48:12.661 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:48:12.664 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-27 13:48:12.664 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:48:12.688 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-27 13:48:12.688 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.2.77 (::1). External IP is 127.0.0.1
+2018-08-27 13:48:12.689 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-27 13:48:12.697 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-27 13:48:12.712 [info] <0.132.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-27 13:48:12.712 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-27 13:48:12.762 [info] <0.138.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-27 13:48:12.762 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-27 13:48:17.613 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:48:17.616 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-27 13:48:17.616 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:48:17.626 [info] <0.164.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{0,0,0,0}},{active,once}])
+2018-08-27 13:48:17.629 [info] <0.165.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{0,0,0,0}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-27 13:48:17.649 [info] <0.163.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{0,0,0,0}:5060 (nksip_protocol)
+2018-08-27 13:48:17.649 [info] <0.269.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{0,0,0,0}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-27 13:48:17.679 [info] <0.163.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{0,0,0,0}:5061 (nksip_protocol)
+2018-08-27 13:48:17.740 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-27 13:48:17.837 [info] <0.375.0>@nksip_call_uac:resend:130 client1 (1XRnv16xFiLtLI6EtIfpyaCHLyr) UAC 76065676001 'REGISTER' (completed) resending updated request
+2018-08-27 13:48:56.418 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-27 13:48:56.441 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-27 13:48:56.445 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-27 13:48:56.448 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-27 13:48:56.461 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-27 13:48:56.470 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-27 13:48:56.501 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-27 13:48:56.534 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ideasip.com
+2018-08-27 13:48:56.534 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:48:56.537 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-27 13:48:56.537 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:48:56.540 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-27 13:48:56.540 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:48:56.543 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voip.eutelia.it
+2018-08-27 13:48:56.543 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:48:56.546 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-27 13:48:56.546 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:48:56.550 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.schlund.de
+2018-08-27 13:48:56.550 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:48:56.552 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voxgratia.org
+2018-08-27 13:48:56.552 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:48:56.555 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-27 13:48:56.555 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:48:56.578 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-27 13:48:56.578 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.2.77 (::1). External IP is 127.0.0.1
+2018-08-27 13:48:56.578 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-27 13:48:56.586 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-27 13:48:56.600 [info] <0.132.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-27 13:48:56.600 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-27 13:48:56.644 [info] <0.138.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-27 13:48:56.645 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-27 13:49:01.239 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:49:01.241 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-27 13:49:01.242 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:49:01.251 [info] <0.163.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{0,0,0,0}},{active,once}])
+2018-08-27 13:49:01.254 [info] <0.164.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{0,0,0,0}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-27 13:49:01.271 [info] <0.162.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{0,0,0,0}:5060 (nksip_protocol)
+2018-08-27 13:49:01.272 [info] <0.268.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{0,0,0,0}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-27 13:49:01.308 [info] <0.162.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{0,0,0,0}:5061 (nksip_protocol)
+2018-08-27 13:49:01.369 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-27 13:49:01.456 [info] <0.374.0>@nksip_call_uac:resend:130 client1 (B5JD8T4Rxf3X003KfjD6x3P7I0C) UAC 70296651001 'REGISTER' (completed) resending updated request
+2018-08-27 13:49:29.334 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-27 13:49:29.359 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-27 13:49:29.363 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-27 13:49:29.369 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-27 13:49:29.380 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-27 13:49:29.386 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-27 13:49:29.413 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-27 13:49:29.449 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-27 13:49:29.449 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:49:29.451 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-27 13:49:29.451 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:49:29.454 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voip.eutelia.it
+2018-08-27 13:49:29.454 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:49:29.457 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voxgratia.org
+2018-08-27 13:49:29.457 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:49:29.460 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ideasip.com
+2018-08-27 13:49:29.460 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:49:29.463 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.schlund.de
+2018-08-27 13:49:29.463 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:49:29.468 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-27 13:49:29.468 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:49:29.473 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-27 13:49:29.473 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:49:29.496 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-27 13:49:29.496 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.2.77 (::1). External IP is 127.0.0.1
+2018-08-27 13:49:29.496 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-27 13:49:29.509 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-27 13:49:29.523 [info] <0.132.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-27 13:49:29.523 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-27 13:49:29.569 [info] <0.138.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-27 13:49:29.570 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-27 13:49:33.695 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:49:33.698 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-27 13:49:33.698 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:49:33.707 [info] <0.163.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{0,0,0,0}},{active,once}])
+2018-08-27 13:49:33.710 [info] <0.164.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{0,0,0,0}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-27 13:49:33.728 [info] <0.162.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{0,0,0,0}:5060 (nksip_protocol)
+2018-08-27 13:49:33.729 [info] <0.268.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{0,0,0,0}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-27 13:49:33.762 [info] <0.162.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{0,0,0,0}:5061 (nksip_protocol)
+2018-08-27 13:49:33.824 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-27 13:53:52.177 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-27 13:53:52.204 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-27 13:53:52.255 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-27 13:53:52.261 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-27 13:53:52.303 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-27 13:53:52.314 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-27 13:53:52.367 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-27 13:53:52.422 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-27 13:53:52.422 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:53:52.425 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-27 13:53:52.425 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:53:52.429 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-27 13:53:52.429 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:53:52.431 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ideasip.com
+2018-08-27 13:53:52.431 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:53:52.434 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voxgratia.org
+2018-08-27 13:53:52.434 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:53:52.437 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voip.eutelia.it
+2018-08-27 13:53:52.437 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:53:52.440 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-27 13:53:52.440 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:53:52.442 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.schlund.de
+2018-08-27 13:53:52.442 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:53:52.496 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-27 13:53:52.496 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.2.77 (::1). External IP is 127.0.0.1
+2018-08-27 13:53:52.496 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-27 13:53:52.505 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-27 13:53:52.524 [info] <0.132.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-27 13:53:52.524 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-27 13:53:52.667 [info] <0.138.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-27 13:53:52.667 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-27 13:54:05.155 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:54:05.165 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-27 13:54:05.165 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:54:05.187 [info] <0.165.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{0,0,0,0}},{active,once}])
+2018-08-27 13:54:05.191 [info] <0.166.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{0,0,0,0}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-27 13:54:05.232 [info] <0.164.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{0,0,0,0}:5060 (nksip_protocol)
+2018-08-27 13:54:05.232 [info] <0.270.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{0,0,0,0}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-27 13:54:05.278 [info] <0.164.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{0,0,0,0}:5061 (nksip_protocol)
+2018-08-27 13:54:05.341 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-27 13:54:56.267 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-27 13:54:56.291 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-27 13:54:56.295 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-27 13:54:56.302 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-27 13:54:56.318 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-27 13:54:56.324 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-27 13:54:56.350 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-27 13:54:56.383 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ideasip.com
+2018-08-27 13:54:56.383 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:54:56.386 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.schlund.de
+2018-08-27 13:54:56.386 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:54:56.389 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-27 13:54:56.389 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:54:56.392 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-27 13:54:56.393 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:54:56.395 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voip.eutelia.it
+2018-08-27 13:54:56.395 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:54:56.398 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-27 13:54:56.398 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:54:56.403 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voxgratia.org
+2018-08-27 13:54:56.403 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:54:56.406 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-27 13:54:56.406 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:54:56.427 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-27 13:54:56.427 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.2.77 (::1). External IP is 127.0.0.1
+2018-08-27 13:54:56.427 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-27 13:54:56.436 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-27 13:54:56.448 [info] <0.132.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-27 13:54:56.449 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-27 13:54:56.495 [info] <0.138.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-27 13:54:56.495 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-27 13:55:04.363 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:55:04.366 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-27 13:55:04.366 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:55:04.375 [info] <0.164.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{0,0,0,0}},{active,once}])
+2018-08-27 13:55:04.378 [info] <0.165.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{0,0,0,0}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-27 13:55:04.398 [info] <0.163.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{0,0,0,0}:5060 (nksip_protocol)
+2018-08-27 13:55:04.398 [info] <0.269.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{0,0,0,0}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-27 13:55:04.430 [info] <0.163.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{0,0,0,0}:5061 (nksip_protocol)
+2018-08-27 13:55:04.494 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-27 13:55:04.585 [info] <0.375.0>@nksip_call_uac:resend:130 client1 (a3P95mzcSlEZlt80VriLjiawdVM) UAC 27300294001 'REGISTER' (completed) resending updated request
+2018-08-27 13:59:09.347 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-27 13:59:09.376 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-27 13:59:09.382 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-27 13:59:09.385 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-27 13:59:09.395 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-27 13:59:09.401 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-27 13:59:09.427 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-27 13:59:09.461 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-27 13:59:09.461 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:59:09.464 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voxgratia.org
+2018-08-27 13:59:09.464 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:59:09.467 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-27 13:59:09.467 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:59:09.470 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.schlund.de
+2018-08-27 13:59:09.470 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:59:09.473 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voip.eutelia.it
+2018-08-27 13:59:09.473 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:59:09.476 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ideasip.com
+2018-08-27 13:59:09.476 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:59:09.479 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-27 13:59:09.479 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:59:09.481 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-27 13:59:09.481 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 13:59:09.500 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-27 13:59:09.500 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.2.77 (::1). External IP is 127.0.0.1
+2018-08-27 13:59:09.500 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-27 13:59:09.508 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-27 13:59:09.525 [info] <0.132.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-27 13:59:09.525 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-27 13:59:09.573 [info] <0.138.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-27 13:59:09.574 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-27 13:59:19.115 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:59:19.118 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-27 13:59:19.118 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 13:59:19.128 [info] <0.165.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{0,0,0,0}},{active,once}])
+2018-08-27 13:59:19.131 [info] <0.166.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{0,0,0,0}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-27 13:59:19.151 [info] <0.164.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{0,0,0,0}:5060 (nksip_protocol)
+2018-08-27 13:59:19.152 [info] <0.270.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{0,0,0,0}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-27 13:59:19.183 [info] <0.164.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{0,0,0,0}:5061 (nksip_protocol)
+2018-08-27 13:59:19.249 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-27 13:59:19.339 [info] <0.376.0>@nksip_call_uac:resend:130 client1 (9RIdEdU6P5wxMDJG9I6q3zkHPTd) UAC 23843404001 'REGISTER' (completed) resending updated request
+2018-08-27 14:02:36.126 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-27 14:02:36.156 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-27 14:02:36.163 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-27 14:02:36.166 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-27 14:02:36.177 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-27 14:02:36.184 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-27 14:02:36.214 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-27 14:02:36.252 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ideasip.com
+2018-08-27 14:02:36.252 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 14:02:36.256 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-27 14:02:36.256 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 14:02:36.261 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voip.eutelia.it
+2018-08-27 14:02:36.261 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 14:02:36.262 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-27 14:02:36.262 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 14:02:36.266 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-27 14:02:36.266 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 14:02:36.268 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.schlund.de
+2018-08-27 14:02:36.268 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 14:02:36.271 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-27 14:02:36.271 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 14:02:36.274 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voxgratia.org
+2018-08-27 14:02:36.274 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 14:02:36.291 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-27 14:02:36.291 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.2.77 (::1). External IP is 127.0.0.1
+2018-08-27 14:02:36.291 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-27 14:02:36.304 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-27 14:02:36.317 [info] <0.132.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-27 14:02:36.317 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-27 14:02:36.365 [info] <0.138.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-27 14:02:36.366 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-27 14:02:43.387 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 14:02:43.389 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-27 14:02:43.390 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 14:02:43.399 [info] <0.164.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{0,0,0,0}},{active,once}])
+2018-08-27 14:02:43.402 [info] <0.165.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{0,0,0,0}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-27 14:02:43.423 [info] <0.163.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{0,0,0,0}:5060 (nksip_protocol)
+2018-08-27 14:02:43.424 [info] <0.269.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{0,0,0,0}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-27 14:02:43.471 [info] <0.163.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{0,0,0,0}:5061 (nksip_protocol)
+2018-08-27 14:02:43.533 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-27 14:02:43.616 [info] <0.375.0>@nksip_call_uac:resend:130 client1 (YtKEhSgWQp9BXTbB16dnxdOZl8n) UAC 128138712001 'REGISTER' (completed) resending updated request
+2018-08-27 14:05:01.786 [info] <0.414.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,82},5061}: ehostunreach
+2018-08-27 14:05:11.546 [info] <0.419.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,82},5061}: ehostunreach
+2018-08-27 14:05:23.099 [info] <0.424.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,82},5061}: ehostunreach
+2018-08-27 14:07:35.707 [info] <0.455.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,82},5061}: ehostunreach
+2018-08-27 14:08:03.278 [info] <0.464.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,81},5061}: econnrefused
+2018-08-27 14:08:12.933 [info] <0.469.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,81},5061}: econnrefused
+2018-08-27 14:08:26.410 [info] <0.475.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,81},5061}: econnrefused
+2018-08-27 14:09:42.083 [info] <0.7.0> Application lager started on node nonode@nohost
+2018-08-27 14:09:42.148 [info] <0.7.0> Application ssh started on node nonode@nohost
+2018-08-27 14:09:42.153 [info] <0.7.0> Application ranch started on node nonode@nohost
+2018-08-27 14:09:42.156 [info] <0.7.0> Application cowlib started on node nonode@nohost
+2018-08-27 14:09:42.170 [info] <0.7.0> Application cowboy started on node nonode@nohost
+2018-08-27 14:09:42.181 [info] <0.7.0> Application gun started on node nonode@nohost
+2018-08-27 14:09:42.205 [info] <0.7.0> Application nklib started on node nonode@nohost
+2018-08-27 14:09:42.250 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.counterpath.com
+2018-08-27 14:09:42.250 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 14:09:42.254 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voxgratia.org
+2018-08-27 14:09:42.254 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 14:09:42.257 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voip.eutelia.it
+2018-08-27 14:09:42.257 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 14:09:42.259 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ideasip.com
+2018-08-27 14:09:42.259 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 14:09:42.263 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.schlund.de
+2018-08-27 14:09:42.263 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 14:09:42.265 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.ekiga.net
+2018-08-27 14:09:42.265 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 14:09:42.267 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.freeswitch.org
+2018-08-27 14:09:42.267 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 14:09:42.270 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:257 Skipping STUN stun.voiparound.com
+2018-08-27 14:09:42.270 [notice] <0.118.0>@nkpacket_stun:get_stun_servers:227 STUN could not find external IP!!
+2018-08-27 14:09:42.294 [info] <0.118.0>@nkpacket_app:start:64 NkPACKET v0.6.1 has started.
+2018-08-27 14:09:42.294 [info] <0.118.0>@nkpacket_app:start:68 Main IP is 192.168.2.77 (::1). External IP is 127.0.0.1
+2018-08-27 14:09:42.294 [info] <0.7.0> Application nkpacket started on node nonode@nohost
+2018-08-27 14:09:42.303 [info] <0.7.0> Application luerl started on node nonode@nohost
+2018-08-27 14:09:42.319 [info] <0.132.0>@nkservice_app:start:71 NkSERVICE vv0.2.0 has started.
+2018-08-27 14:09:42.319 [info] <0.7.0> Application nkservice started on node nonode@nohost
+2018-08-27 14:09:42.367 [info] <0.138.0>@nksip_app:start:93 NkSIP v0.5.0 has started
+2018-08-27 14:09:42.367 [info] <0.7.0> Application nksip started on node nonode@nohost
+2018-08-27 14:09:56.068 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_config:53 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 14:09:56.071 [info] <0.33.0>@nksip_callbacks:plugin_start:102 Plugin nksip started for service client1
+2018-08-27 14:09:56.071 [info] <0.33.0>@nksip_uac_auto_auth_callbacks:plugin_start:58 Plugin nksip_uac_auto_auth_callbacks started (client1)
+2018-08-27 14:09:56.080 [info] <0.166.0>@nkpacket_transport:open_port:400 Opening gen_udp:5060 (default, [binary,{ip,{0,0,0,0}},{active,once}])
+2018-08-27 14:09:56.084 [info] <0.167.0>@nkpacket_transport:open_port:418 Opening gen_tcp:5060 ([{packet,raw},{ip,{0,0,0,0}},{active,false},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}])
+2018-08-27 14:09:56.147 [info] <0.165.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on udp:{0,0,0,0}:5060 (nksip_protocol)
+2018-08-27 14:09:56.148 [info] <0.271.0>@nkpacket_transport:open_port:400 Opening ssl:5061 (default, [{packet,raw},{ip,{0,0,0,0}},{active,once},binary,{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024},{certfile,"deps/nkpacket/priv/cert.pem"},{keyfile,"deps/nkpacket/priv/key.pem"},{versions,['tlsv1.2','tlsv1.1',tlsv1]}])
+2018-08-27 14:09:56.283 [info] <0.165.0>@nkservice_srv_listen_sup:add_transport:132 Service b3finlv started listener on tls:{0,0,0,0}:5061 (nksip_protocol)
+2018-08-27 14:09:56.369 [info] <0.33.0>@nkservice:start:133 Service client1 (b3finlv) has started
+2018-08-27 14:09:56.451 [info] <0.377.0>@nksip_call_uac:resend:130 client1 (SI518fBRjQ9XXz7uN8EHUAPzNdq) UAC 16991122001 'REGISTER' (completed) resending updated request
+2018-08-27 14:09:56.473 [info] <0.379.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,81},5061}: econnrefused
+2018-08-27 14:10:17.618 [info] <0.387.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,81},5061}: econnrefused
+2018-08-27 14:10:37.209 [info] <0.394.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,81},5061}: econnrefused
+2018-08-27 14:10:42.294 [info] <0.400.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,81},5061}: econnrefused
+2018-08-27 14:10:52.150 [info] <0.404.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,81},5061}: econnrefused
+2018-08-27 14:11:11.099 [info] <0.411.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,81},5061}: econnrefused
+2018-08-27 14:11:21.143 [info] <0.416.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,81},5061}: econnrefused
+2018-08-27 14:12:20.061 [info] <0.432.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,81},5061}: econnrefused
+2018-08-27 14:12:22.176 [info] <0.435.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,81},5061}: econnrefused
+2018-08-27 14:12:23.625 [info] <0.439.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,81},5061}: econnrefused
+2018-08-27 14:20:26.375 [info] <0.542.0>@nkpacket_transport:send:167 Error connecting to {nksip_protocol,tls,{192,168,2,81},5061}: econnrefused

@@ -77,3 +77,355 @@ Error in process <0.27.0> with exit value:
      Reason:     killed
      Offender:   [{pid,<0.733.0>},{id,{acceptor,<0.634.0>,99}},{mfargs,{ranch_acceptor,start_link,[{sslsocket,nil,{#Port<0.11182>,{config,{ssl_options,tls,[{3,3},{3,2},{3,1}],verify_none,{#Fun<ssl.7.92387908>,[]},#Fun<ssl.8.92387908>,false,false,undefined,1,<<"deps/nkpacket/priv/cert.pem">>,undefined,<<"deps/nkpacket/priv/key.pem">>,undefined,[],undefined,<<>>,undefined,undefined,undefined,undefined,undefined,[<<"À,">>,<<"À0">>,<<"À$">>,<<"À(">>,<<"À.">>,<<"À2">>,<<"À&">>,<<"À*">>,<<0,159>>,<<0,163>>,<<0,107>>,<<0,106>>,<<0,157>>,<<0,61>>,<<"À+">>,<<"À/">>,<<"À#">>,<<"À'">>,<<"À-">>,<<"À1">>,<<"À%">>,<<"À)">>,<<0,158>>,<<0,162>>,<<0,103>>,<<0,64>>,<<0,156>>,<<0,60>>,<<"À\n">>,<<192,20>>,<<0,57>>,<<0,56>>,<<192,5>>,<<192,15>>,<<0,53>>,<<"À\b">>,<<192,18>>,<<0,22>>,<<0,19>>,<<192,3>>,<<"À\r">>,<<0,10>>,<<"À\t">>,<<192,19>>,<<0,51>>,<<0,50>>,<<192,4>>,<<192,14>>,<<0,47>>,<<0,21>>,<<0,9>>],#Fun<ssl.1.92387908>,true,268435456,false,true,undefined,false,undefined,undefined,undefined,undefined,true,undefined,[],undefined,false,true,undefined,false,{ssl_crl_cache,{internal,[]}}},[{packet,raw},{ip,{192,168,0,60}},{active,once},{mode,binary},{nodelay,true},{keepalive,true},{reuseaddr,true},{backlog,1024}],<0.631.0>,[{backlog,1024},{reuseaddr,true},{keepalive,true},{nodelay,true},{ip,{192,168,0,60}},{packet_size,0},{packet,0},{header,0},{active,false},{mode,binary}],{gen_tcp,tcp,tcp_closed,tcp_error},tls_connection}}},ranch_ssl,<0.633.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
 
+2018-08-26 12:52:18 =CRASH REPORT====
+  crasher:
+    initial call: nkpacket_transport_udp:init/1
+    pid: <0.188.0>
+    registered_name: []
+    exception exit: {eaddrnotavail,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.186.0>,<0.184.0>,nkservice_all_srvs_sup,nkservice_sup,<0.141.0>]
+    messages: []
+    links: [<0.186.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1420
+  neighbours:
+2018-08-26 12:52:18 =CRASH REPORT====
+  crasher:
+    initial call: nkservice_srv:init/1
+    pid: <0.187.0>
+    registered_name: []
+    exception exit: {{transport_error,{could_not_start,{udp,eaddrnotavail}}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.184.0>,nkservice_all_srvs_sup,nkservice_sup,<0.141.0>]
+    messages: []
+    links: [<0.184.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 202
+  neighbours:
+2018-08-26 12:54:24 =CRASH REPORT====
+  crasher:
+    initial call: nkpacket_transport_udp:init/1
+    pid: <0.181.0>
+    registered_name: []
+    exception exit: {eaddrinuse,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.179.0>,<0.177.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.179.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 7085
+  neighbours:
+2018-08-26 12:54:24 =CRASH REPORT====
+  crasher:
+    initial call: nkservice_srv:init/1
+    pid: <0.180.0>
+    registered_name: []
+    exception exit: {{transport_error,{could_not_start,{udp,eaddrinuse}}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.177.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.177.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 202
+  neighbours:
+2018-08-26 12:59:36 =CRASH REPORT====
+  crasher:
+    initial call: nkpacket_transport_udp:init/1
+    pid: <0.254.0>
+    registered_name: []
+    exception exit: {eaddrinuse,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.252.0>,<0.250.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.252.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 7085
+  neighbours:
+2018-08-26 12:59:36 =CRASH REPORT====
+  crasher:
+    initial call: nkservice_srv:init/1
+    pid: <0.253.0>
+    registered_name: []
+    exception exit: {{transport_error,{could_not_start,{udp,eaddrinuse}}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.250.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.250.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 194
+  neighbours:
+2018-08-26 12:59:54 =CRASH REPORT====
+  crasher:
+    initial call: nkpacket_transport_udp:init/1
+    pid: <0.263.0>
+    registered_name: []
+    exception exit: {eaddrinuse,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.261.0>,<0.259.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.261.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 7085
+  neighbours:
+2018-08-26 12:59:54 =CRASH REPORT====
+  crasher:
+    initial call: nkservice_srv:init/1
+    pid: <0.262.0>
+    registered_name: []
+    exception exit: {{transport_error,{could_not_start,{udp,eaddrinuse}}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.259.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.259.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 194
+  neighbours:
+2018-08-26 13:00:07 =CRASH REPORT====
+  crasher:
+    initial call: nkpacket_transport_udp:init/1
+    pid: <0.272.0>
+    registered_name: []
+    exception exit: {eaddrinuse,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.270.0>,<0.268.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.270.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 7061
+  neighbours:
+2018-08-26 13:00:07 =CRASH REPORT====
+  crasher:
+    initial call: nkservice_srv:init/1
+    pid: <0.271.0>
+    registered_name: []
+    exception exit: {{transport_error,{could_not_start,{udp,eaddrinuse}}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.268.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.268.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 194
+  neighbours:
+2018-08-26 13:01:35 =CRASH REPORT====
+  crasher:
+    initial call: nkpacket_transport_udp:init/1
+    pid: <0.169.0>
+    registered_name: []
+    exception exit: {eaddrinuse,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.167.0>,<0.165.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.167.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 7073
+  neighbours:
+2018-08-26 13:01:35 =CRASH REPORT====
+  crasher:
+    initial call: nkservice_srv:init/1
+    pid: <0.168.0>
+    registered_name: []
+    exception exit: {{transport_error,{could_not_start,{udp,eaddrinuse}}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.165.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.165.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 270
+  neighbours:
+2018-08-26 13:32:45 =CRASH REPORT====
+  crasher:
+    initial call: nkpacket_transport_udp:init/1
+    pid: <0.565.0>
+    registered_name: []
+    exception exit: {eaddrnotavail,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.563.0>,<0.561.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.563.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1420
+  neighbours:
+2018-08-26 13:32:45 =CRASH REPORT====
+  crasher:
+    initial call: nkservice_srv:init/1
+    pid: <0.564.0>
+    registered_name: []
+    exception exit: {{transport_error,{could_not_start,{udp,eaddrnotavail}}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.561.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.561.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 249
+  neighbours:
+2018-08-26 13:33:06 =CRASH REPORT====
+  crasher:
+    initial call: nkpacket_transport_udp:init/1
+    pid: <0.574.0>
+    registered_name: []
+    exception exit: {eaddrinuse,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.572.0>,<0.570.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.572.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 7069
+  neighbours:
+2018-08-26 13:33:06 =CRASH REPORT====
+  crasher:
+    initial call: nkservice_srv:init/1
+    pid: <0.573.0>
+    registered_name: []
+    exception exit: {{transport_error,{could_not_start,{udp,eaddrinuse}}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.570.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.570.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 249
+  neighbours:
+2018-08-26 14:42:15 =CRASH REPORT====
+  crasher:
+    initial call: nkpacket_transport_udp:init/1
+    pid: <0.1446.0>
+    registered_name: []
+    exception exit: {eaddrnotavail,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.1444.0>,<0.1442.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.1444.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1424
+  neighbours:
+2018-08-26 14:42:15 =CRASH REPORT====
+  crasher:
+    initial call: nkservice_srv:init/1
+    pid: <0.1445.0>
+    registered_name: []
+    exception exit: {{transport_error,{could_not_start,{udp,eaddrnotavail}}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.1442.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.1442.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 213
+  neighbours:
+2018-08-26 14:42:30 =CRASH REPORT====
+  crasher:
+    initial call: nkpacket_transport_udp:init/1
+    pid: <0.1454.0>
+    registered_name: []
+    exception exit: {eaddrinuse,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.1452.0>,<0.1450.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.1452.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 7116
+  neighbours:
+2018-08-26 14:42:30 =CRASH REPORT====
+  crasher:
+    initial call: nkservice_srv:init/1
+    pid: <0.1453.0>
+    registered_name: []
+    exception exit: {{transport_error,{could_not_start,{udp,eaddrinuse}}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.1450.0>,nkservice_all_srvs_sup,nkservice_sup,<0.133.0>]
+    messages: []
+    links: [<0.1450.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 213
+  neighbours:
+2018-08-26 15:46:04 =CRASH REPORT====
+  crasher:
+    initial call: nkpacket_transport_udp:init/1
+    pid: <0.165.0>
+    registered_name: []
+    exception exit: {eaddrnotavail,[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.163.0>,<0.161.0>,nkservice_all_srvs_sup,nkservice_sup,<0.136.0>]
+    messages: []
+    links: [<0.163.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1422
+  neighbours:
+2018-08-26 15:46:04 =CRASH REPORT====
+  crasher:
+    initial call: nkservice_srv:init/1
+    pid: <0.164.0>
+    registered_name: []
+    exception exit: {{transport_error,{could_not_start,{udp,eaddrnotavail}}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.161.0>,nkservice_all_srvs_sup,nkservice_sup,<0.136.0>]
+    messages: []
+    links: [<0.161.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 249
+  neighbours:

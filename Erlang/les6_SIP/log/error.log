@@ -8,3 +8,36 @@
 2018-08-24 13:20:32.702 [error] emulator Error in process <0.27.0> with exit value:
 {{case_clause,killed},[{shell,server_loop,7,[{file,"shell.erl"},{line,231}]}]}
 2018-08-24 13:20:32.703 [error] <0.634.0> Supervisor {<0.634.0>,ranch_acceptors_sup} had child {acceptor,<0.634.0>,99} started with ranch_acceptor:start_link({sslsocket,nil,{#Port<0.11182>,{config,{ssl_options,tls,[{3,3},{3,2},{3,1}],verify_none,{#Fun<ssl.7..>,...},...},...}}}, ranch_ssl, <0.633.0>) at <0.733.0> exit with reason killed in context child_terminated
+2018-08-26 12:52:18.137 [error] <0.188.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrnotavail)
+2018-08-26 12:52:18.137 [error] <0.188.0> CRASH REPORT Process <0.188.0> with 0 neighbours exited with reason: eaddrnotavail in gen_server:init_it/6 line 344
+2018-08-26 12:52:18.138 [error] <0.187.0> CRASH REPORT Process <0.187.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrnotavail}}} in gen_server:init_it/6 line 344
+2018-08-26 12:54:24.628 [error] <0.181.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrinuse)
+2018-08-26 12:54:24.628 [error] <0.181.0> CRASH REPORT Process <0.181.0> with 0 neighbours exited with reason: eaddrinuse in gen_server:init_it/6 line 344
+2018-08-26 12:54:24.629 [error] <0.180.0> CRASH REPORT Process <0.180.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrinuse}}} in gen_server:init_it/6 line 344
+2018-08-26 12:59:36.896 [error] <0.254.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrinuse)
+2018-08-26 12:59:36.896 [error] <0.254.0> CRASH REPORT Process <0.254.0> with 0 neighbours exited with reason: eaddrinuse in gen_server:init_it/6 line 344
+2018-08-26 12:59:36.897 [error] <0.253.0> CRASH REPORT Process <0.253.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrinuse}}} in gen_server:init_it/6 line 344
+2018-08-26 12:59:54.851 [error] <0.263.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrinuse)
+2018-08-26 12:59:54.851 [error] <0.263.0> CRASH REPORT Process <0.263.0> with 0 neighbours exited with reason: eaddrinuse in gen_server:init_it/6 line 344
+2018-08-26 12:59:54.851 [error] <0.262.0> CRASH REPORT Process <0.262.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrinuse}}} in gen_server:init_it/6 line 344
+2018-08-26 13:00:07.207 [error] <0.272.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrinuse)
+2018-08-26 13:00:07.208 [error] <0.272.0> CRASH REPORT Process <0.272.0> with 0 neighbours exited with reason: eaddrinuse in gen_server:init_it/6 line 344
+2018-08-26 13:00:07.208 [error] <0.271.0> CRASH REPORT Process <0.271.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrinuse}}} in gen_server:init_it/6 line 344
+2018-08-26 13:01:35.809 [error] <0.169.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrinuse)
+2018-08-26 13:01:35.809 [error] <0.169.0> CRASH REPORT Process <0.169.0> with 0 neighbours exited with reason: eaddrinuse in gen_server:init_it/6 line 344
+2018-08-26 13:01:35.810 [error] <0.168.0> CRASH REPORT Process <0.168.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrinuse}}} in gen_server:init_it/6 line 344
+2018-08-26 13:32:45.267 [error] <0.565.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrnotavail)
+2018-08-26 13:32:45.267 [error] <0.565.0> CRASH REPORT Process <0.565.0> with 0 neighbours exited with reason: eaddrnotavail in gen_server:init_it/6 line 344
+2018-08-26 13:32:45.267 [error] <0.564.0> CRASH REPORT Process <0.564.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrnotavail}}} in gen_server:init_it/6 line 344
+2018-08-26 13:33:06.246 [error] <0.574.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrinuse)
+2018-08-26 13:33:06.247 [error] <0.574.0> CRASH REPORT Process <0.574.0> with 0 neighbours exited with reason: eaddrinuse in gen_server:init_it/6 line 344
+2018-08-26 13:33:06.247 [error] <0.573.0> CRASH REPORT Process <0.573.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrinuse}}} in gen_server:init_it/6 line 344
+2018-08-26 14:42:15.592 [error] <0.1446.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,30}:5060 (eaddrnotavail)
+2018-08-26 14:42:15.594 [error] <0.1446.0> CRASH REPORT Process <0.1446.0> with 0 neighbours exited with reason: eaddrnotavail in gen_server:init_it/6 line 344
+2018-08-26 14:42:15.594 [error] <0.1445.0> CRASH REPORT Process <0.1445.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrnotavail}}} in gen_server:init_it/6 line 344
+2018-08-26 14:42:30.330 [error] <0.1454.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5060 (eaddrinuse)
+2018-08-26 14:42:30.330 [error] <0.1454.0> CRASH REPORT Process <0.1454.0> with 0 neighbours exited with reason: eaddrinuse in gen_server:init_it/6 line 344
+2018-08-26 14:42:30.330 [error] <0.1453.0> CRASH REPORT Process <0.1453.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrinuse}}} in gen_server:init_it/6 line 344
+2018-08-26 15:46:04.889 [error] <0.165.0>@nkpacket_transport_udp:init:220 could not start UDP transport on {192,168,0,60}:5070 (eaddrnotavail)
+2018-08-26 15:46:04.890 [error] <0.165.0> CRASH REPORT Process <0.165.0> with 0 neighbours exited with reason: eaddrnotavail in gen_server:init_it/6 line 344
+2018-08-26 15:46:04.890 [error] <0.164.0> CRASH REPORT Process <0.164.0> with 0 neighbours exited with reason: {transport_error,{could_not_start,{udp,eaddrnotavail}}} in gen_server:init_it/6 line 344
