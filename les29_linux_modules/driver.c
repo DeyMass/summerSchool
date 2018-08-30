@@ -26,9 +26,9 @@ static ssize_t driver_read(struct file *file, char *buffer, size_t length, loff_
 
 static ssize_t driver_write(struct file *file, const char *buffer, size_t len, loff_t * off)
 {
-	pr_info("someone want to tell me something >:)\n");
-	static char toWrite[256];
+	char toWrite[256];
 	static int i = 0;
+	pr_info("someone wants to say something >:)");
 	i = 0;
 	while(buffer[i] != '\n'){
 		toWrite[i] = buffer[i];

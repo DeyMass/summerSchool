@@ -1,3 +1,7 @@
+Erlang/les6_SIP/deps/cowboy
+deps2/*
+*.ko
+*.mod*
 *#*#
 *#*
 ./bin/

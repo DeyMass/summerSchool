@@ -1,4 +1,4 @@
-main: clear
+main: clean
 	mkdir -p obj
 	gcc -c ./src/reverse.c -o ./obj/reverse.o
 	gcc -c ./src/main.c -o ./obj/main.o
@@ -7,7 +7,7 @@ main: clear
 	gcc ./obj/main.o -lncurses -o ./bin/res.out
 	./bin/res.out
 
-clear:
+clean:
 	rm -rf obj bin
 
 

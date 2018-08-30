@@ -1,4 +1,4 @@
-main: clear
+main: clean
 	mkdir obj bin
 	gcc -g -c ./src/main.c -o ./obj/main.o
 	gcc -g ./obj/main.o -lncurses -lpthread -o ./bin/res.out
@@ -12,5 +12,5 @@ debug: main
 check: main
 	valgrind --leak-check=full ./bin/res.out
 
-clear:
+clean:
 	rm -rf bin obj *.o *.out *.rpm* *.deb

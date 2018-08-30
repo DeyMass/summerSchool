@@ -1,1 +1,0 @@
-cmd_/home/michail/summerSchool/les29_linux_modules/hello.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/michail/summerSchool/les29_linux_modules/hello.ko /home/michail/summerSchool/les29_linux_modules/hello.o /home/michail/summerSchool/les29_linux_modules/hello.mod.o ;  true
