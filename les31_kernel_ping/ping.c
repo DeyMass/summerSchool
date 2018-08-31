@@ -71,9 +71,9 @@ int ping_create(void)
 	addr.sin_addr.s_addr = htonl(create_address(ip));
 	addr.sin_family = AF_INET;
 	addr.sin_port = htons(12345);
-	my_addr.sin_addr.s_addr = htonl(create_address(my_ip));
-	my_addr.sin_family = AF_INET;
-	my_addr.sin_port = htons(12345);
+	
+	
+	
 //----------------------------------------
 	msg.msg_name = &addr;
 	msg.msg_namelen = sizeof(addr);
@@ -85,11 +85,10 @@ int ping_create(void)
 	vec.iov_base = &icmph;
 //----------------------------------------
 
-	status = sock->ops->bind(sock, (struct sockaddr*)&my_addr, sizeof(my_addr));
-	if (status < 0){
-		pr_info("binding error\n");
-		return -1;
-	}
+	
+		
+	
+	
 	icmph.type = 8;//8 - ICMP request
 	icmph.code = 0;
 	icmph.checksum = gen_crc16((u16*)&icmph, sizeof(icmph)/2);
